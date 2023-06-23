@@ -1,18 +1,20 @@
-const formulario = document.getElementById("form");
-const campos = document.querySelectorAll(".inputs");
-const mensagemErro = document.querySelectorAll(".small");
+const numeroCartao = document.getElementById("numeracao-cartao");
+const numeroInput = document.getElementById("numeracao-input");
 
-formulario.addEventListener("submit", function (event) {
-	event.preventDefault();
-	
-});
-function somenteNumeros(e) {
-	var code = e.which || e.keyCode;
+const titularCartao = document.getElementById("titular-cartao");
+const titularInput = document.getElementById("titular-input");
 
-	if (code < 48 || code > 57) {
-		e.preventDefault();
-        
-		return false;
-	}
-}
+const mesCartao = document.getElementById("mes-cartao");
+const mesInput = document.getElementById("mes-input");
 
+const anoCartao = document.getElementById("ano-cartao");
+const anoInput = document.getElementById("ano-input");
+
+const segurancaCartao = document.getElementById("seguranca-cartao");
+const segurancaInput = document.getElementById("seguranca-input");
+
+const botaoSubmit = document.getElementById("botao");
+
+const completado = document.getElementsByClassName(".thank");
+
+const formulario = document.querySelector("form");
