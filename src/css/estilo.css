@@ -1,0 +1,158 @@
+body {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+}
+.hidden {
+	display: none;
+}
+.conteudo {
+	display: flex;
+	gap: 150px;
+	position: relative;
+}
+.bg-imagem {
+	background-image: url(../imagens/bg-main-desktop.png);
+	width: 400px;
+	height: 100vh;
+}
+
+.conteudo .cartoes img {
+	width: 340px;
+}
+.cartao-1 {
+	position: absolute;
+	left: 140px;
+	top: 110px;
+}
+.logo {
+	position: absolute;
+	top: 130px;
+	left: 160px;
+}
+.cartoes img.logo {
+	width: 60px;
+}
+.numeracao-cartao {
+	color: var(--White);
+	position: absolute;
+	left: 170px;
+	top: 220px;
+	font-size: 20px;
+	letter-spacing: 3px;
+}
+.titular-cartao {
+	position: absolute;
+	color: var(--White);
+	left: 170px;
+	top: 260px;
+	font-size: 13px;
+}
+
+.mes-cartao {
+	position: absolute;
+	color: var(--White);
+	left: 420px;
+	top: 260px;
+	font-size: 13px;
+}
+.ano-cartao {
+	position: absolute;
+	color: var(--White);
+	left: 443px;
+	top: 260px;
+	font-size: 13px;
+}
+
+.cartao-2 {
+	position: absolute;
+	left: 220px;
+	top: 320px;
+}
+.seguranca-cartao {
+	position: absolute;
+	color: var(--White);
+	left: 490px;
+	top: 405px;
+	font-size: 13px;
+	letter-spacing: 2px;
+}
+.formulario {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.formulario .inputs {
+	margin-bottom: 20px;
+	border-radius: 10px;
+	height: 50px;
+	width: 450px;
+	border: none;
+	cursor: pointer;
+	border: 1px solid var(--Light-grayish-violet);
+	outline: none;
+}
+
+.formulario label {
+	font-size: 8px;
+	letter-spacing: 2px;
+	margin-bottom: 10px;
+}
+.data {
+	display: flex;
+	width: 100%;
+	align-items: center;
+}
+.data .inputs {
+	width: 80px;
+	height: 93px;
+	border: none;
+	border: 1px solid var(--Light-grayish-violet);
+	height: 50px;
+	border-radius: 10px;
+	margin-right: 10px;
+	cursor: pointer;
+	outline: none;
+}
+
+.inputs-2 {
+	display: flex;
+	align-items: center;
+}
+
+.data .cvc {
+	width: 260px;
+	margin-left: 10px;
+}
+
+::placeholder {
+	padding-left: 15px;
+	color: var(--Light-grayish-violet);
+}
+
+.botao {
+	width: 430px;
+	height: 40px;
+	border-radius: 10px;
+	color: var(--White);
+	background-color: var(--Very-dark-violet);
+	border: none;
+	cursor: pointer;
+	margin-top: 30px;
+}
+.input-correct {
+	border-color: var(--input-linear-grafient2);
+}
+.input-error {
+	border-color: var(--input-errors);
+}
+
+.small {
+	display: none;
+	color: var(--input-errors);
+	font-size: 11px;
+}
+.cor-borda {
+	border-color: var(--Light-grayish-violet);
+}
