@@ -36,79 +36,67 @@
 				<p id="seguranca-cartao" class="seguranca-cartao">000</p>
 			</section>
 
-			<form class="formulario" method="POST" id="form" autocomplete="off">
-				<div class="nome">
-					<label for="titular-input">CARDHOLDER NAME</label><br />
+			<form class="formulario" method="POST" id="form">
+				<div class="itens-cartao">
+					<label for="titular-input">CARDHOLDER NAME</label>
 
-					<input
-						class="inputs"
-						type="text"
-						name="titular-input"
-						id="titular-input"
-						placeholder="e.g. Jane Appleseed"
-						required />
+					<input class="inputs" type="text" name="titular-input" id="titular-input" placeholder="e.g. Jane Appleseed" />
+					<a class="msg-titular">mensagem de erro</a>
 				</div>
 
-				<div class="numero">
-					<label for="numeracao-input">CARD NUMBER</label><br />
+				<div class="itens-cartao">
+					<label for="numeracao-input">CARD NUMBER</label>
 					<input
 						class="inputs"
-						type="number"
-						oninput="if(this.value.length > this.maxLength)this.value=this.slice(0,this.maxLength)"
-						minlength="16"
+						type="tel"
 						maxlength="16"
 						id="numeracao-input"
 						name="numeracao-input"
-						placeholder="e.g. 1234 5678 9123 0000"
-						required /><br />
+						placeholder="e.g. 1234 5678 9123 0000" />
+					<a class="msg-numeracao">mensagem de erro</a>
 				</div>
+				<div class="data-input">
+					<div class="itens-cartao">
+						<label for="mes-input">EXP.DATE (MM/</label>
 
-				<div class="data">
-                   
-					<div class="inputs-2">
-						<div class="mes-input">
-                            <label for="mes-input">EXP.DATE (MM/</label><br />
-
-							<input
-								class="inputs"
-								type="number"
-								name="mes-input"
-								id="mes-input"
-								placeholder="MM"
-								oninput="if(this.value.length > this.maxLength)this.value=this.slice(0,this.maxLength)"
-								minlength="2"
-								maxlength="2"
-								required /><br />
-						</div>
-						<div class="ano-input">
-                            <label for="ano-input">YY)</label><br />
-							<input
-								class="inputs"
-								type="number"
-								name="ano-input"
-								id="ano-input"
-								placeholder="YY"
-								oninput="if(this.value.length > this.maxLength)this.value=this.slice(0,this.maxLength)"
-								minlength="2"
-								maxlength="2"
-								required />
-						</div>
+						<input
+							class="inputs"
+							type="tel"
+							name="mes-input"
+							id="mes-input"
+							placeholder="MM"
+							minlength="2"
+							maxlength="2" />
+						<a class="msg-mes">mensagem de erro</a>
 					</div>
 
-					<div class="seguranca-input">
-						<label for="seguranca-input">CVC</label><br />
+					<div class="itens-cartao">
+						<label for="ano-input">YY)</label>
+						<input
+							class="inputs"
+							type="tel"
+							name="ano-input"
+							id="ano-input"
+							placeholder="YY"
+							minlength="2"
+							maxlength="2" />
+							<a class="msg-ano">mensagem de erro</a>
+					</div>
+
+					<div class="itens-cartao">
+						<label for="seguranca-input">CVC</label>
 						<input
 							class="inputs cvc"
-							type="number"
+							type="tel"
 							name="seguranca-input"
 							id="seguranca-input"
 							placeholder="e.g.123"
-							oninput="if(this.value.length > this.maxLength)this.value=this.slice(0,this.maxLength)"
 							minlength="3"
-							maxlength="3"
-							required />
+							maxlength="3" />
+						<a class="msg-seguranca">mensagem de erro</a>
 					</div>
 				</div>
+
 				<button id="botao" class="botao" type="submit">Confirm</button>
 			</form>
 			<div class="thank hidden">
