@@ -3,94 +3,69 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="./src/css/estilo.css" />
 		<link rel="stylesheet" href="./src/css/reset.css" />
 		<link rel="stylesheet" href="./src/css/responsivo.css" />
 		<link rel="stylesheet" href="./src/css/variaveis.css" />
 		<link rel="shortcut icon" href="./src/imagens/favicon-32x32.png" type="image/x-icon" />
-
-		<title>Cartão Interativo</title>
+		<title>Interactive Card</title>
 	</head>
 	<body>
-		<main class="conteudo">
-			<div class="bg-imagem"></div>
+		<div class="bg-image"></div>
+		<main class="container">
+			<section class="cards">
+				<div>
+					<img class="image-front-card" src="./src/imagens/bg-card-front.png" />
+					<div class="details-card1">
+						<img class="logo" src="./src/imagens/card-logo.svg" alt="" />
+						<p class="card-number">0000 0000 0000 0000</p>
+						<p class="card-name">JANE APPLESEED</p>
+						<p class="card-cvc">00/00</p>
+					</div>
+				</div>
 
-			<section class="cartoes">
-				<img class="cartao-1" src="./src/imagens/bg-card-front.png" alt="Imagem frente cartao" />
+				<img class="image-back-card" src="./src/imagens/bg-card-back.png" alt="" />
 
-				<img class="logo" src="./src/imagens/card-logo.svg" alt="logo cartao" />
-
-				<p class="numeracao-cartao" id="numeracao-cartao">0000 0000 0000 0000</p>
-
-				<p class="titular-cartao" id="titular-cartao">JANE APPLESEED</p>
-
-				<p id="mes-cartao" class="mes-cartao">00/</p>
-
-				<p id="ano-cartao" class="ano-cartao">00</p>
-
-				<img class="cartao-2" src="./src/imagens/bg-card-back.png" alt="Imagem tras cartao" />
-
-				<p id="seguranca-cartao" class="seguranca-cartao">000</p>
+				<div class="details-card2">
+					<p>000</p>
+				</div>
 			</section>
-
-			<form class="formulario" method="POST" id="form">
-				<div class="itens-cartao">
-					<label for="titular-input">CARDHOLDER NAME</label>
-
-					<input class="inputs" type="text" name="titular-input" id="titular-input" placeholder="e.g. Jane Appleseed" />
-					<a class="msg-titular">mensagem de erro</a>
+			<form method="post" class="form" id="form">
+				<div class="input-item">
+					<label for="name">CARDHOLDER NAME</label>
+					<input type="text" name="name" id="name" placeholder="e.g Jane Appleseed" />
 				</div>
-
-				<div class="itens-cartao">
-					<label for="numeracao-input">CARD NUMBER</label>
-					<input
-						class="inputs"
-						type="tel"
-						maxlength="16"
-						id="numeracao-input"
-						name="numeracao-input"
-						placeholder="e.g. 1234 5678 9123 0000" />
-					<a class="msg-numeracao">mensagem de erro</a>
+				<div class="input-item">
+					<label for="number">CARD NUMBER</label>
+					<input type="number" name="number" id="number" placeholder="e.g 1234 5678 9123 0000" maxlength="16" />
 				</div>
-				<div class="data-input">
-					<div class="itens-cartao">
-						<label for="mes-input">EXP.DATE (MM/</label>
+				<div class="input-date">
+					<div class="input-item">
+						<label for="month">EXP.DATE  </label>
 
-						<input class="inputs" type="tel" name="mes-input" id="mes-input" placeholder="MM" maxlength="2" />
-						<a class="msg-mes">mensagem de erro</a>
+						<input class="month" type="text" name="month" id="month" placeholder="MM" maxlength="2" />
+					</div>
+					<div class="input-item">
+					<label for="year">(MM/YY)</label>
+					
+						<input class="year" type="text" name="year" id="year" placeholder="YY" maxlength="2" />
 					</div>
 
-					<div class="itens-cartao">
-						<label for="ano-input">YY)</label>
-						<input class="inputs" type="tel" name="ano-input" id="ano-input" placeholder="YY" maxlength="2" />
-						<a class="msg-ano">mensagem de erro</a>
-					</div>
-
-					<div class="itens-cartao">
-						<label for="seguranca-input">CVC</label>
-						<input
-							class="inputs cvc"
-							type="tel"
-							name="seguranca-input"
-							id="seguranca-input"
-							placeholder="e.g.123"
-							maxlength="3" />
-						<a class="msg-seguranca">mensagem de erro</a>
+					<div class="input-item">
+						<label for="cvc">CVC</label>
+						<input class="cvc" type="text" name="cvc" id="cvc" placeholder="e.g.123" maxlength="3" />
 					</div>
 				</div>
 
-				<button id="botao" class="botao" type="submit">Confirm</button>
+				<button class="confirm-button" id="confirm-button">Confirm</button>
 			</form>
-			<div class="thank">
-				<img src="./src/imagens/icon-complete.svg" alt="icone completo" />
-				<h1>Thank you!</h1>
-				<p>We've added your card details</p>
-				<button>Continue</button>
-			</div>
+			<section class="thank">
+				<img src="./src/imagens/icon-complete.svg" alt="" />
+				<h3>THANK YOU!</h3>
+				<p>We've added your details</p>
+				<button class="continue-button" id="continue-button">Continue</button>
+			</section>
 		</main>
-		<script src="./src/js/index.js"></script>
 	</body>
 </html>
