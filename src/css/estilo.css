@@ -34,13 +34,21 @@ body {
 	left: 260px;
 	font-size: 15px;
 }
-.details-card1 .card-cvc {
+.details-card1 .card-month {
 	color: var(--White);
 	position: absolute;
 	top: 280px;
 	left: 500px;
 	font-size: 15px;
 }
+.details-card1 .card-year {
+	color: var(--White);
+	position: absolute;
+	top: 280px;
+	left: 526px;
+	font-size: 15px;
+}
+
 .image-back-card {
 	width: 350px;
 	position: relative;
@@ -63,16 +71,14 @@ body {
 
 .form input {
 	width: 90%;
-	margin-bottom: 15px;
 	border-radius: 7px;
 	padding: 10px;
 	border: 1px solid var(--Light-grayish-violet);
-	display: block;
+
 	outline: none;
 }
 .form label {
-	font-size: 10px;
-	display: inline-block;
+	font-size: 9px;
 	color: var(--Very-dark-violet);
 	margin-bottom: 5px;
 	letter-spacing: 2px;
@@ -85,18 +91,34 @@ body {
 .form input:focus {
 	border: solid 1px var(--Dark-grayish-violet);
 }
+
+.input-item a {
+	color: var(--input-errors);
+	font-size: 10px;
+	visibility: hidden;
+}
 .input-date {
 	display: flex;
+	margin-top: 20px;
+	width: 70%;
 }
-
+.input-date label{
+	position: absolute;
+	bottom: 290px;
+}
 .input-date .month,
 .input-date .year {
 	width: 60px;
 	margin-right: 10px;
 }
+
 .input-date .cvc {
 	width: 200px;
 	margin-left: 20px;
+}
+.label-cvc,
+.a-cvc {
+	margin-left: 25px;
 }
 
 .confirm-button {
@@ -109,6 +131,7 @@ body {
 	cursor: pointer;
 }
 .thank {
+	text-align: center;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -136,4 +159,12 @@ body {
 	background-color: var(--Very-dark-violet);
 	color: var(--White);
 	cursor: pointer;
+}
+
+.input-item.error a {
+	color: var(--input-errors);
+	visibility: visible;
+}
+.input-item.error input {
+	border-color: var(--input-errors);
 }

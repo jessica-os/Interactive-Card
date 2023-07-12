@@ -21,40 +21,44 @@
 						<img class="logo" src="./src/imagens/card-logo.svg" alt="" />
 						<p class="card-number">0000 0000 0000 0000</p>
 						<p class="card-name">JANE APPLESEED</p>
-						<p class="card-cvc">00/00</p>
+						<p class="card-month">00/</p>
+						<p class="card-year">00</p>
 					</div>
 				</div>
 
 				<img class="image-back-card" src="./src/imagens/bg-card-back.png" alt="" />
 
 				<div class="details-card2">
-					<p>000</p>
+					<p class="card-cvc">000</p>
 				</div>
 			</section>
 			<form method="post" class="form" id="form">
 				<div class="input-item">
-					<label for="name">CARDHOLDER NAME</label>
-					<input type="text" name="name" id="name" placeholder="e.g Jane Appleseed" />
+					<label for="name">CARDHOLDER NAME </label>
+					<input type="text" name="name" id="name" placeholder="e.g Jane Appleseed" /><br />
+					<a>error message</a>
 				</div>
 				<div class="input-item">
 					<label for="number">CARD NUMBER</label>
-					<input type="number" name="number" id="number" placeholder="e.g 1234 5678 9123 0000" maxlength="16" />
+
+					<input type="tel" name="number" id="number" placeholder="e.g 1234 5678 9123 0000" maxlength="16" /> <br />
+					<a>error message</a>
 				</div>
 				<div class="input-date">
 					<div class="input-item">
-						<label for="month">EXP.DATE  </label>
+						<label for="month">EXP.DATE(MM/YY) </label>
 
-						<input class="month" type="text" name="month" id="month" placeholder="MM" maxlength="2" />
+						<input class="month" type="text" name="month" id="month" placeholder="MM" maxlength="2" /> <br />
+						<a>error message</a>
 					</div>
 					<div class="input-item">
-					<label for="year">(MM/YY)</label>
-					
 						<input class="year" type="text" name="year" id="year" placeholder="YY" maxlength="2" />
 					</div>
 
 					<div class="input-item">
-						<label for="cvc">CVC</label>
+						<label class="label-cvc" for="cvc">CVC</label>
 						<input class="cvc" type="text" name="cvc" id="cvc" placeholder="e.g.123" maxlength="3" />
+						<a class="a-cvc">error message</a>
 					</div>
 				</div>
 
@@ -67,5 +71,6 @@
 				<button class="continue-button" id="continue-button">Continue</button>
 			</section>
 		</main>
+		<script src="./src/js/index.js"></script>
 	</body>
 </html>

@@ -1,119 +1,121 @@
-const numeracaoCartao = document.querySelector("#numeracao-cartao");
-const numeracaoInput = document.querySelector("#numeracao-input");
+const cardName = document.querySelector(".card-name");
+const inputName = document.querySelector("#name");
 
-const titularCartao = document.querySelector("#titular-cartao");
-const titularInput = document.querySelector("#titular-input");
+const cardNumber = document.querySelector(".card-number");
+const inputNumber = document.querySelector("#number");
 
-const mesCartao = document.querySelector("#mes-cartao");
-const mesInput = document.querySelector("#mes-input");
+const cardCvc = document.querySelector(".card-cvc");
+const inputCvc = document.querySelector("#cvc");
 
-const anoCartao = document.querySelector("#ano-cartao");
-const anoInput = document.querySelector("#ano-input");
+const cardMonth = document.querySelector(".card-month");
+const inputMonth = document.querySelector("#month");
 
-const segurancaCartao = document.querySelector("#seguranca-cartao");
-const segurancaInput = document.querySelector("#seguranca-input");
+const cardYear = document.querySelector(".card-year");
+const inputYear = document.querySelector("#year");
 
-const botao = document.querySelector("#botao");
-const formulario = document.querySelector("#form");
+const form = document.querySelector("#form");
+const confirmButton = document.querySelector("#confirm-button ");
 const thank = document.querySelector(".thank");
 
-formulario.addEventListener("submit", event => {
+form.addEventListener("submit", event => {
 	event.preventDefault();
-	formularioValido();
+	formValidate();
 });
 
-function formularioValido() {
-	checarTitular();
-	checarNumeracao();
-	checarMes();
-	checarAno();
-	checarCvc();
+function formValidate() {
+	checkInputName();
+	checkInputNumber();
+	checkInputMonth();
+	checkInputYear();
+	checkInputCvc();
 
-	const formItens = formulario.querySelectorAll(".itens-cartao");
-	const validado = [...formItens].every(item => {
-		return item.className === "itens-cartao";
+	const inputItem = form.querySelectorAll(".input-item");
+	const valid = [...inputItem].every(item => {
+		return item.className === "input-item";
 	});
-	if (validado) {
-		formulario.style.display = "none";
+	if (valid) {
+		form.style.display = "none";
 		thank.style.display = "block";
 	}
 }
-function erroInput(input, mensagem) {
-	const formItem = input.parentElement;
-	const textoMensagem = formItem.querySelector("a");
-	textoMensagem.innerText = mensagem;
-	formItem.className = "itens-cartao erro";
+
+function error(input, message) {
+	const inputItem = input.parentElement;
+	const textMessage = inputItem.querySelector("a");
+
+	textMessage.innerText = message;
+	inputItem.className = "input-item error";
 }
 
-numeracaoInput.oninput = () => {
-	numeracaoCartao.innerText = numeracaoInput.value;
-};
-
-titularInput.oninput = () => {
-	titularCartao.innerText = titularInput.value;
-};
-mesInput.oninput = () => {
-	mesCartao.innerText = mesInput.value;
-};
-anoInput.oninput = () => {
-	anoCartao.innerText = anoInput.value;
-};
-segurancaInput.oninput = () => {
-	segurancaCartao.innerText = segurancaInput.value;
-};
-
-function checarTitular() {
-	const valorTitularInput = titularInput.value;
-
-	if (valorTitularInput === "") {
-		erroInput(titularInput, "fill in all fields");
+function checkInputName() {
+	const inputNameValue = inputName.value;
+	if (inputNameValue === "") {
+		error(inputName, "can't be blank");
 	} else {
-		const formItem = titularInput.parentElement;
-		formItem.classList = "itens-cartao";
+		const inputItem = inputName.parentElement;
+		inputItem.className = "input-item";
 	}
 }
 
-function checarNumeracao() {
-	const valorNumeracaoInput = numeracaoInput.value;
-
-	if (valorNumeracaoInput === "") {
-		erroInput(numeracaoInput, "fill in all fields");
-	} else if (valorNumeracaoInput.length < 16) {
-		erroInput(numeracaoInput, "Enter 16 characters");
+function checkInputNumber() {
+	const inputNumberValue = inputNumber.value;
+	if (inputNumberValue === "") {
+		error(inputNumber, "can't be blank");
+	} else if (inputNumberValue.length < 16) {
+		error(inputNumber, "fill in 16 characters");
 	} else {
-		const formItem = numeracaoInput.parentElement;
-		formItem.classList = "itens-cartao";
+		const inputItem = inputNumber.parentElement;
+		inputItem.className = "input-item";
 	}
 }
 
-function checarMes() {
-	const valorMesInput = mesInput.value;
-
-	if (valorMesInput === "" || valorMesInput.length < 2) {
-		erroInput(mesInput, "Can't be blank");
+function checkInputMonth() {
+	const inputMonthValue = inputMonth.value;
+	const inputItem = inputMonth.parentElement;
+	if (inputMonthValue === "") {
+		error(inputMonth, "can't be blank");
+	} else if (inputMonthValue.length < 2) {
+		error(inputMonth, "fill with 2 characters");
 	} else {
-		const formItem = mesInput.parentElement;
-		formItem.classList = "itens-cartao";
+		const inputItem = inputMonth.parentElement;
+		inputItem.className = "input-item";
 	}
 }
-function checarAno() {
-	const valorAnoInput = anoInput.value;
-
-	if (valorAnoInput === "" || valorAnoInput.length < 2) {
-		erroInput(anoInput, "Can't be blank");
+function checkInputYear() {
+	const inputYearValue = inputYear.value;
+	const inputItem = inputYear.parentElement;
+	if (inputYearValue === "" || inputYearValue.length < 2) {
+		inputItem.className = "input-item error";
 	} else {
-		const formItem = anoInput.parentElement;
-		formItem.classList = "itens-cartao";
+		const inputItem = inputYear.parentElement;
+		inputItem.className = "input-item";
+	}
+}
+function checkInputCvc() {
+	const inputCvcValue = inputCvc.value;
+	const inputItem = inputCvc.parentElement;
+	if (inputCvcValue === "") {
+		error(inputCvc, "can't be blank");
+	} else if (inputCvcValue.length < 3) {
+		error(inputCvc, "fill with 3 characters");
+	} else {
+		const inputItem = inputCvc.parentElement;
+		inputItem.className = "input-item";
 	}
 }
 
-function checarCvc() {
-	const valorSegurancaInput = segurancaInput.value;
-
-	if (valorSegurancaInput === "" || valorSegurancaInput.length < 3) {
-		erroInput(segurancaInput, "Can't be blank");
-	} else {
-		const formItem = segurancaInput.parentElement;
-		formItem.classList = "itens-cartao";
-	}
-}
+inputName.addEventListener("input", () => {
+	cardName.innerText = inputName.value;
+});
+inputNumber.addEventListener("input", () => {
+	cardNumber.innerText = inputNumber.value;
+});
+inputCvc.addEventListener("input", () => {
+	cardCvc.innerText = inputCvc.value;
+});
+inputMonth.addEventListener("input", () => {
+	cardMonth.innerText = inputMonth.value;
+});
+inputYear.addEventListener("input", () => {
+	cardYear.innerText = inputYear.value;
+});
