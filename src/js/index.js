@@ -62,7 +62,9 @@ function checkInputNumber() {
 	if (inputNumberValue === "") {
 		error(inputNumber, "can't be blank");
 	} else if (inputNumberValue.length < 16) {
-		error(inputNumber, "fill in 16 characters");
+		error(inputNumber, "Card number must be 16 numbers");
+	} else if (!/^\d+(\s\d+)*$/.test(inputNumberValue)) {
+		error(inputNumber, "Wrong format, numbers only");
 	} else {
 		const inputItem = inputNumber.parentElement;
 		inputItem.className = "input-item";
@@ -76,6 +78,8 @@ function checkInputMonth() {
 		error(inputMonth, "can't be blank");
 	} else if (inputMonthValue.length < 2) {
 		error(inputMonth, "fill with 2 characters");
+	} else if (parseInt(inputMonthValue) > 12) {
+		error(inputMonth, "must not be greater than 12!");
 	} else {
 		const inputItem = inputMonth.parentElement;
 		inputItem.className = "input-item";
@@ -107,9 +111,11 @@ function checkInputCvc() {
 inputName.addEventListener("input", () => {
 	cardName.innerText = inputName.value;
 });
+
 inputNumber.addEventListener("input", () => {
 	cardNumber.innerText = inputNumber.value;
 });
+
 inputCvc.addEventListener("input", () => {
 	cardCvc.innerText = inputCvc.value;
 });

@@ -62,8 +62,8 @@ body {
 	top: 430px;
 }
 .form {
-	width: 400px;
-	height: 100%;
+	max-width: 400px;
+
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -102,10 +102,7 @@ body {
 	margin-top: 20px;
 	width: 70%;
 }
-.input-date label{
-	position: absolute;
-	bottom: 290px;
-}
+
 .input-date .month,
 .input-date .year {
 	width: 60px;
