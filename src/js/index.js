@@ -16,6 +16,7 @@ const inputYear = document.querySelector("#year");
 const form = document.querySelector("#form");
 const confirmButton = document.querySelector("#confirm-button ");
 const thank = document.querySelector(".thank");
+const continueButton = document.querySelector(".continue-button");
 
 form.addEventListener("submit", event => {
 	event.preventDefault();
@@ -38,6 +39,10 @@ function formValidate() {
 		thank.style.display = "block";
 	}
 }
+continueButton.addEventListener("click", () => {
+	thank.style.display = "none";
+	form.style.display = "block";
+});
 
 function error(input, message) {
 	const inputItem = input.parentElement;

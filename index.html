@@ -15,21 +15,27 @@
 		<div class="bg-image"></div>
 		<main class="container">
 			<section class="cards">
-				<div>
-					<img class="image-front-card" src="./src/imagens/bg-card-front.png" />
+				<div class="front-card">
+					<img class="image-front-card" src="./src/imagens/bg-card-front.png" alt="" aria-hidden="true" />
 					<div class="details-card1">
-						<img class="logo" src="./src/imagens/card-logo.svg" alt="" />
-						<p class="card-number">0000 0000 0000 0000</p>
-						<p class="card-name">JANE APPLESEED</p>
-						<p class="card-month">00/</p>
-						<p class="card-year">00</p>
+						<img class="logo" src="./src/imagens/card-logo.svg" alt="" aria-hidden="true" />
+						<span class="card-number">0000 0000 0000 0000</span>
+						<div class="info">
+							<span class="card-name">JANE APPLESEED</span>
+							<div class="exp-date">
+								<span class="card-month">00</span>
+								<span>/</span>
+								<span class="card-year">00</span>
+							</div>
+						</div>
 					</div>
 				</div>
+				<div class="back-card">
+					<img class="image-back-card" src="./src/imagens/bg-card-back.png" alt="" aria-hidden="true" />
 
-				<img class="image-back-card" src="./src/imagens/bg-card-back.png" alt="" />
-
-				<div class="details-card2">
-					<p class="card-cvc">000</p>
+					<div class="details-card2">
+						<span class="card-cvc">000</span>
+					</div>
 				</div>
 			</section>
 			<form method="post" class="form" id="form">
