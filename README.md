@@ -1,9 +1,9 @@
 # Interactive-Card
-Este desafio foi retirado do site [Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw/hub).
+Este desafio foi retirado do site Frontend Mentor.<br>  [Clique aqui](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw) para conferir o desafio.
 
 ## Do que se trata esse desafio?
-Trata-se de um formulário,com preenchimento automático no cartão de crédito.
-As informações passadas neste formulário devem ser preenchidas dinamicamente no cartão.
+Trata-se de um formulário,com preenchimento de forma dinâmica no cartão de crédito.
+O usuário ao preencher os campos do formulário, pode conferir os dados sendo inseridos dinamicamente no cartão ao lado.
 
 ## Quais validações devem ser feitas?
 
@@ -31,12 +31,12 @@ Em cada campo do input existem validações,como:
 ## Veja como ficou:
 
 ### Desktop:
-<img src="./src/imagens-readme/Peek 18-07-2023 12-46.gif" alt="">
+<img src="./src/imagens-readme/Peek 18-07-2023 12-46.gif" alt="visualização da tela no tamanho desktop">
 
 ### Tablet:
-<img src="./src/imagens-readme/Peek 18-07-2023 12-52.gif" alt="">
+<img src="./src/imagens-readme/Peek 18-07-2023 12-52.gif" alt="visualização da tela no tamanho tablet">
  
 ### Mobile:
-  <img src="./src/imagens-readme/Peek 18-07-2023 13-00.gif" alt="">
+  <img src="./src/imagens-readme/Peek 18-07-2023 13-00.gif" alt="visualização da tela no tamanho mobile">
 
-Para ver o projeto pronto, [clique aqui!]()
+Para ver o projeto pronto, [clique aqui!](https://jessica-os.github.io/Interactive-Card/)
