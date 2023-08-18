@@ -31,12 +31,12 @@ Em cada campo do input existem validações,como:
 ## Veja como ficou:
 
 ### Desktop:
-<img src="./src/imagens-readme/Peek 18-07-2023 12-46.gif" alt="visualização da tela no tamanho desktop">
+<img src="./src/imagens-readme/Interactive-card-desktop.gif" alt="video desktop">
 
 ### Tablet:
-<img src="./src/imagens-readme/Peek 18-07-2023 12-52.gif" alt="visualização da tela no tamanho tablet">
+<img src="./src/imagens-readme/Interactive-card-tablet.gif" alt="video tablet">
  
 ### Mobile:
-  <img src="./src/imagens-readme/Peek 18-07-2023 13-00.gif" alt="visualização da tela no tamanho mobile">
+ <img src="./src/imagens-readme/Interactive-card-mobile.gif" alt="video mobile">
 
 Para ver o projeto pronto, [clique aqui!](https://jessica-os.github.io/Interactive-Card/)
