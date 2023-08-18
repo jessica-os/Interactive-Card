@@ -87,8 +87,7 @@ continueButton.addEventListener("click", () => {
 });
 
 function nameValidate() {
-  
-  if (inputName.value.match(/^[A-Za-z]+$/)) {
+  if (inputName.value.match(/^[a-z A-Z ]+$/)) {
     inputName.style.borderColor = "hsl(270, 3%, 87%)";
     nameError.style.visibility = "hidden";
     return true;
