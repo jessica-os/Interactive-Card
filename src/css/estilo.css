@@ -1,167 +1,167 @@
 body {
-	height: 100vh;
-	width: 100%;
+  height: 100vh;
+  width: 100%;
 }
 
 .container {
-	display: flex;
-	align-items: center;
-	gap: 350px;
-	height: 100vh;
-	width: 100vw;
-	background: url(../imagens/bg-main-desktop.png) no-repeat;
-	background-size: contain;
-	background-size: 400px 1400px;
+  display: flex;
+  align-items: center;
+  gap: 350px;
+  height: 100vh;
+  width: 100vw;
+  background: url(../imagens/bg-main-desktop.png) no-repeat;
+  background-size: contain;
+  background-size: 400px 1400px;
 }
-
 
 .cards .front-card {
-	position: relative;
-	max-width: 400px;
+  position: relative;
+  max-width: 400px;
 }
 .cards .front-card .image-front-card {
-	width: 100%;
-	margin: 100px 0 0 180px;
+  width: 100%;
+  margin: 100px 0 0 180px;
 }
 
 .details-card1 .logo {
-	position: absolute;
-	left: 200px;
-	top: 120px;
+  position: absolute;
+  left: 200px;
+  top: 120px;
 }
 .details-card1 .card-number {
-	position: absolute;
-	left: 220px;
-	top: 230px;
-	color: var(--White);
-	letter-spacing: 3px;
-	font-size: 24px;
-	width: 100%;
+  position: absolute;
+  left: 220px;
+  top: 230px;
+  color: var(--White);
+  letter-spacing: 3px;
+  font-size: 24px;
+  width: 100%;
 }
 .details-card1 .info .card-name {
-	position: absolute;
-	color: var(--White);
-	top: 280px;
-	left: 220px;
+  position: absolute;
+  color: var(--White);
+  top: 280px;
+  left: 220px;
 }
 .details-card1 .info .exp-date {
-	position: absolute;
-	color: var(--White);
-	top: 280px;
-	left: 500px;
-	display: flex;
+  position: absolute;
+  color: var(--White);
+  top: 280px;
+  left: 500px;
+  display: flex;
 }
 
 .cards .back-card {
-	position: relative;
-	max-width: 400px;
+  position: relative;
+  max-width: 400px;
 }
 .cards .back-card .image-back-card {
-	width: 100%;
-	margin: 30px 0 0 250px;
+  width: 100%;
+  margin: 30px 0 0 250px;
 }
 
 .details-card2 .card-cvc {
-	color: var(--White);
-	position: absolute;
-	top: 125px;
-	left: 560px;
+  color: var(--White);
+  position: absolute;
+  top: 125px;
+  left: 560px;
 }
 .form {
-	max-width: 350px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .form input {
-	width: 90%;
-	border-radius: 7px;
-	padding: 10px;
-	border: 1px solid var(--Light-grayish-violet);
+  width: 90%;
+  border-radius: 7px;
+  padding: 10px;
+  border: 1px solid var(--Light-grayish-violet);
 
-	outline: none;
+  outline: none;
 }
 .form label {
-	font-size: 9px;
-	color: var(--Very-dark-violet);
-	margin-bottom: 5px;
-	letter-spacing: 2px;
+  font-size: 9px;
+  color: var(--Very-dark-violet);
+  margin-bottom: 5px;
+  letter-spacing: 2px;
 }
 
 .form ::placeholder {
-	font-size: 15px;
-	color: var(--Light-grayish-violet);
+  font-size: 15px;
+  color: var(--Light-grayish-violet);
 }
 .form input:focus {
-	border: solid 1px var(--Dark-grayish-violet);
+  border: solid 1px var(--Dark-grayish-violet);
 }
 
 .input-item a {
-	color: var(--input-errors);
-	font-size: 10px;
-	visibility: hidden;
+  color: var(--input-errors);
+  font-size: 10px;
+  visibility: hidden;
 }
 .input-date {
-	display: flex;
-	margin-top: 20px;
-	max-width: 350px;
+  display: flex;
+  margin-top: 20px;
+  max-width: 350px;
 }
 
 .input-date .month,
 .input-date .year {
-	width: 60px;
-	margin-right: 10px;
+  width: 60px;
+  margin-right: 10px;
 }
 
 .input-date .cvc {
-	max-width: 80%;
-	margin-left: 10px;
+  max-width: 80%;
+  margin-left: 10px;
 }
 .label-cvc,
 .a-cvc {
-	margin-left: 25px;
+  margin-left: 25px;
 }
 
 .confirm-button {
-	margin-top: 30px;
-	padding: 12px;
-	width: 90%;
-	border-radius: 7px;
-	background-color: var(--Very-dark-violet);
-	color: var(--White);
-	cursor: pointer;
+  margin-top: 30px;
+  padding: 12px;
+  width: 90%;
+  border-radius: 7px;
+  background-color: var(--Very-dark-violet);
+  color: var(--White);
+  cursor: pointer;
 }
 .thank {
-	text-align: center;
-	display: none;
+  text-align: center;
+  display: none;
 }
 .thank img {
-	margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 .thank h3 {
-	margin-bottom: 10px;
-	letter-spacing: 3px;
-	color: var(--Very-dark-violet);
+  margin-bottom: 10px;
+  letter-spacing: 3px;
+  color: var(--Very-dark-violet);
 }
 .thank p {
-	margin-bottom: 40px;
-	color: var(--Dark-grayish-violet);
-	font-size: 16px;
+  margin-bottom: 40px;
+  color: var(--Dark-grayish-violet);
+  font-size: 16px;
 }
 .thank .continue-button {
-	padding: 12px;
-	width: 300px;
-	border-radius: 7px;
-	background-color: var(--Very-dark-violet);
-	color: var(--White);
-	cursor: pointer;
+  padding: 12px;
+  width: 300px;
+  border-radius: 7px;
+  background-color: var(--Very-dark-violet);
+  color: var(--White);
+  cursor: pointer;
 }
 
-.input-item.error a {
-	color: var(--input-errors);
-	visibility: visible;
+.form span {
+  color: var(--input-errors);
+  font-size: 14px;
+  visibility: hidden;
 }
 .input-item.error input {
-	border-color: var(--input-errors);
+  border-color: var(--input-errors);
 }
