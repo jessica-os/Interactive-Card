@@ -18,6 +18,7 @@ Em cada campo do input existem validações,como:
 - Uso de flexbox para ajustes dos elementos na tela.
 - Uso e manipulação dos elementos no JavaScript através do DOM.
 - Uso de funções, eventos e condicionais para o dinamismo na tela.
+- Uso de regex/máscara.
 - Uso de mediaqueries para responsividade.
 
 ## Linguagens Utilizadas:
