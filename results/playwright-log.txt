@@ -1,0 +1,82 @@
+{"level":30,"time":"2025-04-11T19:53:46.510Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"Listening on 64357"}
+(node:33560) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-04-11T19:53:46.578Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-04-11T19:53:46.946Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"Adding browser to stack: chromium, version: 130.0.6723.31"}
+{"level":30,"time":"2025-04-11T19:53:46.946Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-04-11T19:53:46.946Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-04-11T19:53:46.952Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"Start of node method newContext"}
+{"level":30,"time":"2025-04-11T19:53:46.953Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-04-11T19:53:46.953Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"Trace file: "}
+{"level":30,"time":"2025-04-11T19:53:46.967Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"Changed active context"}
+{"level":30,"time":"2025-04-11T19:53:46.967Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"End of node method newContext"}
+{"level":30,"time":"2025-04-11T19:53:46.975Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-04-11T19:53:46.975Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-04-11T19:53:47.219Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"Video path: undefined"}
+{"level":30,"time":"2025-04-11T19:53:47.219Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"Changed active page"}
+{"level":30,"time":"2025-04-11T19:53:47.631Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"End of node method newPage"}
+{"level":30,"time":"2025-04-11T19:53:47.645Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-04-11T19:53:47.645Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"Strict mode is enabled, find Locator with id=name in page."}
+{"level":30,"time":"2025-04-11T19:53:47.732Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"End of node method typeText"}
+{"level":30,"time":"2025-04-11T19:53:47.736Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-04-11T19:53:47.736Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"Strict mode is enabled, find Locator with id=number in page."}
+{"level":30,"time":"2025-04-11T19:53:47.821Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"End of node method typeText"}
+{"level":30,"time":"2025-04-11T19:53:47.823Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-04-11T19:53:47.823Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"Strict mode is enabled, find Locator with id=month in page."}
+{"level":30,"time":"2025-04-11T19:53:47.853Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"End of node method typeText"}
+{"level":30,"time":"2025-04-11T19:53:47.856Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-04-11T19:53:47.856Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"Strict mode is enabled, find Locator with id=year in page."}
+{"level":30,"time":"2025-04-11T19:53:47.882Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"End of node method typeText"}
+{"level":30,"time":"2025-04-11T19:53:47.887Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-04-11T19:53:47.887Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"Strict mode is enabled, find Locator with id=cvc in page."}
+{"level":30,"time":"2025-04-11T19:53:47.920Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"End of node method typeText"}
+{"level":30,"time":"2025-04-11T19:53:47.924Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"Start of node method getElementStates"}
+{"level":30,"time":"2025-04-11T19:53:47.924Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"Strict mode is enabled, find Locator with id=confirm-button in page."}
+{"level":30,"time":"2025-04-11T19:53:47.949Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"End of node method getElementStates"}
+{"level":30,"time":"2025-04-11T19:53:47.952Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"Start of node method click"}
+{"level":30,"time":"2025-04-11T19:53:47.953Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"Strict mode is enabled, find Locator with id=confirm-button in page."}
+{"level":30,"time":"2025-04-11T19:53:47.997Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"End of node method click"}
+{"level":30,"time":"2025-04-11T19:53:48.002Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-04-11T19:53:48.002Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"Strict mode is enabled, find Locator with xpath=//h3[contains(text(), \"THANK YOU!\")] in page."}
+{"level":30,"time":"2025-04-11T19:53:48.007Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-04-11T19:53:48.011Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"Start of node method getElement"}
+{"level":30,"time":"2025-04-11T19:53:48.011Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"Strict mode is enabled, find Locator with xpath=//h3[contains(text(), \"THANK YOU!\")] in page."}
+{"level":30,"time":"2025-04-11T19:53:48.015Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"End of node method getElement"}
+{"level":30,"time":"2025-04-11T19:53:48.019Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"Start of node method getText"}
+{"level":30,"time":"2025-04-11T19:53:48.019Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"Strict mode is enabled, find Locator with xpath=//h3[contains(text(), \"THANK YOU!\")] in page."}
+{"level":30,"time":"2025-04-11T19:53:48.029Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"Retrieved text for element xpath=//h3[contains(text(), \"THANK YOU!\")] containing THANK YOU!"}
+{"level":30,"time":"2025-04-11T19:53:48.029Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"End of node method getText"}
+{"level":30,"time":"2025-04-11T19:53:48.032Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"Start of node method highlightElements"}
+{"level":30,"time":"2025-04-11T19:53:48.032Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"Strict mode is disabled, return Locator: xpath=//h3[contains(text(), \"THANK YOU!\")] in page."}
+{"level":30,"time":"2025-04-11T19:53:48.035Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"Locator count is 1"}
+{"level":30,"time":"2025-04-11T19:53:48.038Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"End of node method highlightElements"}
+{"level":30,"time":"2025-04-11T19:53:48.041Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-04-11T19:53:48.041Z","pid":33560,"hostname":"COLTWL72WCV44","Take screenshot with options: ":{"path":"C:\\Users\\jessica.oliveira\\OneDrive - Compass UOL\\Documentos\\Robot\\Interactive-card\\Interactive-Card\\results\\browser\\screenshot\\robotframework-browser-screenshot-1.png","fileType":"png","fullPage":true,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-04-11T19:53:48.190Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-04-11T19:53:48.195Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-11T19:53:48.197Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-11T19:53:48.199Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-11T19:53:48.201Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-11T19:53:48.203Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"Changed active context"}
+{"level":30,"time":"2025-04-11T19:53:48.203Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"Changing current active page: page=4d43974b-2acb-496c-8ea5-2c2d2214427e"}
+{"level":30,"time":"2025-04-11T19:53:48.203Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"Changed active page"}
+{"level":30,"time":"2025-04-11T19:53:48.206Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-11T19:53:48.208Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-11T19:53:48.209Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-04-11T19:53:48.210Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-04-11T19:53:48.211Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-04-11T19:53:48.211Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-04-11T19:53:48.213Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"Changing current active page: page=4d43974b-2acb-496c-8ea5-2c2d2214427e"}
+{"level":30,"time":"2025-04-11T19:53:48.214Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"Changed active page"}
+{"level":30,"time":"2025-04-11T19:53:48.217Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-11T19:53:48.219Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-11T19:53:48.221Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"Changed active context"}
+{"level":30,"time":"2025-04-11T19:53:48.221Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"Changing current active page: page=4d43974b-2acb-496c-8ea5-2c2d2214427e"}
+{"level":30,"time":"2025-04-11T19:53:48.221Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"Changed active page"}
+{"level":30,"time":"2025-04-11T19:53:48.223Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-04-11T19:53:48.239Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"Removed page=d3dc89fb-e99b-46d2-80ed-3a0f2ea7c2db from context=4aa664a1-8bf4-4cd5-b05c-c5425ed2a011 page stack"}
+{"level":30,"time":"2025-04-11T19:53:48.264Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-04-11T19:53:48.270Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-11T19:53:48.271Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-11T19:53:48.315Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-04-11T19:53:48.536Z","pid":33560,"hostname":"COLTWL72WCV44","msg":"End of node method closeAllBrowsers"}
