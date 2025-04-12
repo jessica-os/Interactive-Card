@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.12.2 on win32)" generated="2025-04-12T13:06:55.602419" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.12.2 on win32)" generated="2025-04-12T13:29:39.414220" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="C:\Users\User\Desktop\ROBOT\Interactive-Card\tests">
 <suite id="s1-s1" name="Interactive-Card" source="C:\Users\User\Desktop\ROBOT\Interactive-Card\tests\interactive-card.robot">
 <test id="s1-s1-t1" name="Validar envio do formulário com dados válidos" line="8">
 <kw name="Abrir a página do formulário" owner="interactive-card" type="SETUP">
 <kw name="New Browser" owner="Browser">
-<msg time="2025-04-12T13:06:57.480640" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\User\\Desktop\\ROBOT\\Interactive-Card\\results\\browser\\traces\\temp\\9352099f-685b-4b86-8b4a-cb7f03a3c160"}</msg>
-<msg time="2025-04-12T13:06:57.524640" level="INFO">Starting Browser process C:\Python312\Lib\site-packages\Browser\wrapper\index.js using port 50763</msg>
-<msg time="2025-04-12T13:06:57.524640" level="INFO">Node startup parameters: ['node', 'C:\\Python312\\Lib\\site-packages\\Browser\\wrapper\\index.js', '50763']</msg>
-<msg time="2025-04-12T13:07:00.343342" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\User\\Desktop\\ROBOT\\Interactive-Card\\results\\browser\\traces\\temp\\9352099f-685b-4b86-8b4a-cb7f03a3c160"}</msg>
+<msg time="2025-04-12T13:29:40.683627" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\User\\Desktop\\ROBOT\\Interactive-Card\\results\\browser\\traces\\temp\\a0d7ae15-6faf-4ee3-bd1b-028f1bfad0f1"}</msg>
+<msg time="2025-04-12T13:29:40.721848" level="INFO">Starting Browser process C:\Python312\Lib\site-packages\Browser\wrapper\index.js using port 61901</msg>
+<msg time="2025-04-12T13:29:40.721848" level="INFO">Node startup parameters: ['node', 'C:\\Python312\\Lib\\site-packages\\Browser\\wrapper\\index.js', '61901']</msg>
+<msg time="2025-04-12T13:29:42.866338" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\User\\Desktop\\ROBOT\\Interactive-Card\\results\\browser\\traces\\temp\\a0d7ae15-6faf-4ee3-bd1b-028f1bfad0f1"}</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2025-04-12T13:06:57.477641" elapsed="2.865701"/>
+<status status="PASS" start="2025-04-12T13:29:40.681626" elapsed="2.184712"/>
 </kw>
 <kw name="New Context" owner="Browser">
-<msg time="2025-04-12T13:07:00.350338" level="INFO">{
+<msg time="2025-04-12T13:29:42.873337" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": false,
   "forcedColors": "none",
@@ -31,141 +31,141 @@
     "height": 800
   }
 }</msg>
-<msg time="2025-04-12T13:07:00.448341" level="INFO">Successfully created context. </msg>
-<msg time="2025-04-12T13:07:00.448341" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1200, 'height': 800}}</msg>
+<msg time="2025-04-12T13:29:42.942466" level="INFO">Successfully created context. </msg>
+<msg time="2025-04-12T13:29:42.942466" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1200, 'height': 800}}</msg>
 <arg>viewport={"width": ${WIDTH}, "height": ${HEIGHT}}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<status status="PASS" start="2025-04-12T13:07:00.345341" elapsed="0.103000"/>
+<status status="PASS" start="2025-04-12T13:29:42.867334" elapsed="0.075132"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2025-04-12T13:07:01.679653" level="INFO">Successfully initialized new page object and opened url: http://127.0.0.1:5501/</msg>
+<msg time="2025-04-12T13:29:44.071081" level="INFO">Successfully initialized new page object and opened url: http://127.0.0.1:5501/</msg>
 <arg>${URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2025-04-12T13:07:00.449341" elapsed="1.230312"/>
+<status status="PASS" start="2025-04-12T13:29:42.943459" elapsed="1.127622"/>
 </kw>
 <kw name="Get Title" owner="Browser">
-<msg time="2025-04-12T13:07:01.702646" level="INFO">Title: 'Interactive Card'</msg>
-<msg time="2025-04-12T13:07:01.703647" level="INFO">${title} = Interactive Card</msg>
+<msg time="2025-04-12T13:29:44.096079" level="INFO">Title: 'Interactive Card'</msg>
+<msg time="2025-04-12T13:29:44.096079" level="INFO">${title} = Interactive Card</msg>
 <var>${title}</var>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the title of the current page.</doc>
-<status status="PASS" start="2025-04-12T13:07:01.680647" elapsed="0.023000"/>
+<status status="PASS" start="2025-04-12T13:29:44.072076" elapsed="0.024003"/>
 </kw>
 <kw name="Should Be Equal As Strings" owner="BuiltIn">
 <arg>${title}</arg>
 <arg>Interactive Card</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2025-04-12T13:07:01.703647" elapsed="0.001000"/>
+<status status="PASS" start="2025-04-12T13:29:44.096079" elapsed="0.002003"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-04-12T13:07:01.705646" level="INFO">Interactive Card</msg>
+<msg time="2025-04-12T13:29:44.099082" level="INFO">Interactive Card</msg>
 <arg>${title}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-04-12T13:07:01.705646" elapsed="0.000999"/>
+<status status="PASS" start="2025-04-12T13:29:44.098082" elapsed="0.001000"/>
 </kw>
-<status status="PASS" start="2025-04-12T13:06:57.472641" elapsed="4.234004"/>
+<status status="PASS" start="2025-04-12T13:29:40.678626" elapsed="3.420456"/>
 </kw>
 <kw name="Preencher o formulário" owner="interactive-card">
 <kw name="Name" owner="FakerLibrary">
-<msg time="2025-04-12T13:07:01.720532" level="INFO">${nome} = Kathryn Rodriguez</msg>
+<msg time="2025-04-12T13:29:44.110080" level="INFO">${nome} = Sara Hernandez</msg>
 <var>${nome}</var>
 <doc>:example: 'John Doe'</doc>
-<status status="PASS" start="2025-04-12T13:07:01.717531" elapsed="0.003001"/>
+<status status="PASS" start="2025-04-12T13:29:44.108078" elapsed="0.002002"/>
 </kw>
 <kw name="Random Number" owner="FakerLibrary">
-<msg time="2025-04-12T13:07:01.721531" level="INFO">${numero} = 3677054702360268</msg>
+<msg time="2025-04-12T13:29:44.112078" level="INFO">${numero} = 6055720992582052</msg>
 <var>${numero}</var>
 <arg>digits=16</arg>
 <doc>Generate a random integer according to the following rules:</doc>
-<status status="PASS" start="2025-04-12T13:07:01.720532" elapsed="0.000999"/>
+<status status="PASS" start="2025-04-12T13:29:44.111086" elapsed="0.000992"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-04-12T13:07:01.723535" level="INFO">${mes} = 09</msg>
+<msg time="2025-04-12T13:29:44.113082" level="INFO">${mes} = 09</msg>
 <var>${mes}</var>
 <arg>09</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-04-12T13:07:01.722532" elapsed="0.001003"/>
+<status status="PASS" start="2025-04-12T13:29:44.113082" elapsed="0.000994"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-04-12T13:07:01.724532" level="INFO">${ano} = 32</msg>
+<msg time="2025-04-12T13:29:44.115079" level="INFO">${ano} = 32</msg>
 <var>${ano}</var>
 <arg>32</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-04-12T13:07:01.723535" elapsed="0.000997"/>
+<status status="PASS" start="2025-04-12T13:29:44.114076" elapsed="0.001003"/>
 </kw>
 <kw name="Random Number" owner="FakerLibrary">
-<msg time="2025-04-12T13:07:01.726536" level="INFO">${cvc} = 964</msg>
+<msg time="2025-04-12T13:29:44.117078" level="INFO">${cvc} = 635</msg>
 <var>${cvc}</var>
 <arg>digits=3</arg>
 <doc>Generate a random integer according to the following rules:</doc>
-<status status="PASS" start="2025-04-12T13:07:01.725532" elapsed="0.001004"/>
+<status status="PASS" start="2025-04-12T13:29:44.115079" elapsed="0.001999"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>Nome gerado: ${nome}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-04-12T13:07:01.727533" elapsed="0.001004"/>
+<status status="PASS" start="2025-04-12T13:29:44.117078" elapsed="0.002984"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>Cartão gerado: ${numero}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-04-12T13:07:01.728537" elapsed="0.001995"/>
+<status status="PASS" start="2025-04-12T13:29:44.120062" elapsed="0.003018"/>
 </kw>
 <kw name="Type Text" owner="Browser">
-<msg time="2025-04-12T13:07:01.732532" level="INFO">Types the text 'Kathryn Rodriguez' in the given field.</msg>
+<msg time="2025-04-12T13:29:44.125082" level="INFO">Types the text 'Sara Hernandez' in the given field.</msg>
 <arg>id=name</arg>
 <arg>${nome}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-12T13:07:01.730532" elapsed="0.338649"/>
+<status status="PASS" start="2025-04-12T13:29:44.124079" elapsed="0.202963"/>
 </kw>
 <kw name="Type Text" owner="Browser">
-<msg time="2025-04-12T13:07:02.072252" level="INFO">Types the text '3677054702360268' in the given field.</msg>
+<msg time="2025-04-12T13:29:44.329036" level="INFO">Types the text '6055720992582052' in the given field.</msg>
 <arg>id=number</arg>
 <arg>${numero}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-12T13:07:02.070182" elapsed="0.150641"/>
+<status status="PASS" start="2025-04-12T13:29:44.328040" elapsed="0.126354"/>
 </kw>
 <kw name="Type Text" owner="Browser">
-<msg time="2025-04-12T13:07:02.223923" level="INFO">Types the text '09' in the given field.</msg>
+<msg time="2025-04-12T13:29:44.456397" level="INFO">Types the text '09' in the given field.</msg>
 <arg>id=month</arg>
 <arg>${mes}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-12T13:07:02.221835" elapsed="0.056623"/>
+<status status="PASS" start="2025-04-12T13:29:44.455393" elapsed="0.051001"/>
 </kw>
 <kw name="Type Text" owner="Browser">
-<msg time="2025-04-12T13:07:02.280462" level="INFO">Types the text '32' in the given field.</msg>
+<msg time="2025-04-12T13:29:44.508389" level="INFO">Types the text '32' in the given field.</msg>
 <arg>id=year</arg>
 <arg>${ano}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-12T13:07:02.278458" elapsed="0.062003"/>
+<status status="PASS" start="2025-04-12T13:29:44.507390" elapsed="0.046140"/>
 </kw>
 <kw name="Type Text" owner="Browser">
-<msg time="2025-04-12T13:07:02.342460" level="INFO">Types the text '964' in the given field.</msg>
+<msg time="2025-04-12T13:29:44.555529" level="INFO">Types the text '635' in the given field.</msg>
 <arg>id=cvc</arg>
 <arg>${cvc}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-12T13:07:02.340461" elapsed="0.067003"/>
+<status status="PASS" start="2025-04-12T13:29:44.554529" elapsed="0.053001"/>
 </kw>
-<status status="PASS" start="2025-04-12T13:07:01.715530" elapsed="0.691934"/>
+<status status="PASS" start="2025-04-12T13:29:44.106079" elapsed="0.501451"/>
 </kw>
 <kw name="Confirmar envio" owner="interactive-card">
 <kw name="Get Element States" owner="Browser">
-<msg time="2025-04-12T13:07:02.504762" level="INFO">States are: ['attached', 'visible', 'enabled', 'defocused']</msg>
+<msg time="2025-04-12T13:29:44.677844" level="INFO">States are: ['attached', 'visible', 'enabled', 'defocused']</msg>
 <arg>id=confirm-button</arg>
 <arg>validate</arg>
 <arg>value &amp; visible</arg>
@@ -173,95 +173,95 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-12T13:07:02.417462" elapsed="0.087300"/>
+<status status="PASS" start="2025-04-12T13:29:44.608527" elapsed="0.069317"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2025-04-12T13:07:02.505763" level="INFO">Clicks the element 'id=confirm-button'.</msg>
+<msg time="2025-04-12T13:29:44.678841" level="INFO">Clicks the element 'id=confirm-button'.</msg>
 <arg>id=confirm-button</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-12T13:07:02.504762" elapsed="0.056903"/>
+<status status="PASS" start="2025-04-12T13:29:44.677844" elapsed="0.050743"/>
 </kw>
-<status status="PASS" start="2025-04-12T13:07:02.416456" elapsed="0.146204"/>
+<status status="PASS" start="2025-04-12T13:29:44.607530" elapsed="0.122041"/>
 </kw>
 <kw name="Validar mensagem de sucesso" owner="interactive-card">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2025-04-12T13:07:02.575669" level="INFO">Waited for Element with selector xpath=//h3[contains(text(), "THANK YOU!")] at state visible</msg>
+<msg time="2025-04-12T13:29:44.745573" level="INFO">Waited for Element with selector xpath=//h3[contains(text(), "THANK YOU!")] at state visible</msg>
 <arg>xpath=//h3[contains(text(), "THANK YOU!")]</arg>
 <arg>visible</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2025-04-12T13:07:02.563669" elapsed="0.012000"/>
+<status status="PASS" start="2025-04-12T13:29:44.730578" elapsed="0.014995"/>
 </kw>
 <kw name="Get Element" owner="Browser">
-<msg time="2025-04-12T13:07:02.587662" level="INFO">Locator found successfully.</msg>
-<msg time="2025-04-12T13:07:02.588660" level="INFO">${elemento} = xpath=//h3[contains(text(), "THANK YOU!")]</msg>
+<msg time="2025-04-12T13:29:44.759916" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-12T13:29:44.759916" level="INFO">${elemento} = xpath=//h3[contains(text(), "THANK YOU!")]</msg>
 <var>${elemento}</var>
 <arg>xpath=//h3[contains(text(), "THANK YOU!")]</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2025-04-12T13:07:02.576666" elapsed="0.011994"/>
+<status status="PASS" start="2025-04-12T13:29:44.746571" elapsed="0.014366"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2025-04-12T13:07:02.618669" level="INFO">Text: 'THANK YOU!'</msg>
-<msg time="2025-04-12T13:07:02.619661" level="INFO">${mensagem_sucesso} = THANK YOU!</msg>
+<msg time="2025-04-12T13:29:44.790933" level="INFO">Text: 'THANK YOU!'</msg>
+<msg time="2025-04-12T13:29:44.791938" level="INFO">${mensagem_sucesso} = THANK YOU!</msg>
 <var>${mensagem_sucesso}</var>
 <arg>${elemento}</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-12T13:07:02.588660" elapsed="0.031001"/>
+<status status="PASS" start="2025-04-12T13:29:44.760937" elapsed="0.031001"/>
 </kw>
 <kw name="Should Be Equal" owner="BuiltIn">
 <arg>${mensagem_sucesso}</arg>
 <arg>THANK YOU!</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2025-04-12T13:07:02.619661" elapsed="0.001000"/>
+<status status="PASS" start="2025-04-12T13:29:44.791938" elapsed="0.000996"/>
 </kw>
 <kw name="Highlight Elements" owner="Browser">
-<msg time="2025-04-12T13:07:02.636664" level="INFO">Highlighted 1 elements for 5000.</msg>
+<msg time="2025-04-12T13:29:44.809935" level="INFO">Highlighted 1 elements for 5000.</msg>
 <arg>${elemento}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Adds a highlight to elements matched by the ``selector``. Provides a style adjustment.</doc>
-<status status="PASS" start="2025-04-12T13:07:02.620661" elapsed="0.017001"/>
+<status status="PASS" start="2025-04-12T13:29:44.792934" elapsed="0.018003"/>
 </kw>
 <kw name="Take Screenshot" owner="Browser">
-<msg time="2025-04-12T13:07:03.054955" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2025-04-12T13:29:45.150530" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
 <arg>fullPage=${True}</arg>
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="PASS" start="2025-04-12T13:07:02.637662" elapsed="0.417293"/>
+<status status="PASS" start="2025-04-12T13:29:44.810937" elapsed="0.340601"/>
 </kw>
-<status status="PASS" start="2025-04-12T13:07:02.562660" elapsed="0.493292"/>
+<status status="PASS" start="2025-04-12T13:29:44.729571" elapsed="0.422958"/>
 </kw>
 <kw name="Close Browser" owner="Browser" type="TEARDOWN">
-<msg time="2025-04-12T13:07:04.102666" level="INFO">Closed browser</msg>
+<msg time="2025-04-12T13:29:45.829014" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-04-12T13:07:03.071954" elapsed="1.030712"/>
+<status status="PASS" start="2025-04-12T13:29:45.153526" elapsed="0.675488"/>
 </kw>
-<status status="PASS" start="2025-04-12T13:06:57.467640" elapsed="6.635561"/>
+<status status="PASS" start="2025-04-12T13:29:40.674624" elapsed="5.154390"/>
 </test>
 <test id="s1-s1-t2" name="Validar o não envio do formulário com campos em branco" line="15">
 <kw name="Abrir a página do formulário" owner="interactive-card" type="SETUP">
 <kw name="New Browser" owner="Browser">
-<msg time="2025-04-12T13:07:04.165196" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\User\\Desktop\\ROBOT\\Interactive-Card\\results\\browser\\traces\\temp\\8f130866-3743-4755-96a4-d61b1a9f8a39"}</msg>
-<msg time="2025-04-12T13:07:04.787994" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\User\\Desktop\\ROBOT\\Interactive-Card\\results\\browser\\traces\\temp\\8f130866-3743-4755-96a4-d61b1a9f8a39"}</msg>
+<msg time="2025-04-12T13:29:45.896384" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\User\\Desktop\\ROBOT\\Interactive-Card\\results\\browser\\traces\\temp\\3c22fbac-f598-446c-9e6e-2738c9b31b98"}</msg>
+<msg time="2025-04-12T13:29:46.363431" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\User\\Desktop\\ROBOT\\Interactive-Card\\results\\browser\\traces\\temp\\3c22fbac-f598-446c-9e6e-2738c9b31b98"}</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2025-04-12T13:07:04.163190" elapsed="0.625804"/>
+<status status="PASS" start="2025-04-12T13:29:45.894383" elapsed="0.470044"/>
 </kw>
 <kw name="New Context" owner="Browser">
-<msg time="2025-04-12T13:07:04.793991" level="INFO">{
+<msg time="2025-04-12T13:29:46.369426" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": false,
   "forcedColors": "none",
@@ -275,158 +275,176 @@
     "height": 800
   }
 }</msg>
-<msg time="2025-04-12T13:07:04.872991" level="INFO">Successfully created context. </msg>
-<msg time="2025-04-12T13:07:04.872991" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1200, 'height': 800}}</msg>
+<msg time="2025-04-12T13:29:46.431429" level="INFO">Successfully created context. </msg>
+<msg time="2025-04-12T13:29:46.431429" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1200, 'height': 800}}</msg>
 <arg>viewport={"width": ${WIDTH}, "height": ${HEIGHT}}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<status status="PASS" start="2025-04-12T13:07:04.788994" elapsed="0.083997"/>
+<status status="PASS" start="2025-04-12T13:29:46.365428" elapsed="0.066999"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2025-04-12T13:07:06.009415" level="INFO">Successfully initialized new page object and opened url: http://127.0.0.1:5501/</msg>
+<msg time="2025-04-12T13:29:47.497708" level="INFO">Successfully initialized new page object and opened url: http://127.0.0.1:5501/</msg>
 <arg>${URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2025-04-12T13:07:04.873991" elapsed="1.135424"/>
+<status status="PASS" start="2025-04-12T13:29:46.432427" elapsed="1.066285"/>
 </kw>
 <kw name="Get Title" owner="Browser">
-<msg time="2025-04-12T13:07:06.026414" level="INFO">Title: 'Interactive Card'</msg>
-<msg time="2025-04-12T13:07:06.027414" level="INFO">${title} = Interactive Card</msg>
+<msg time="2025-04-12T13:29:47.518707" level="INFO">Title: 'Interactive Card'</msg>
+<msg time="2025-04-12T13:29:47.518707" level="INFO">${title} = Interactive Card</msg>
 <var>${title}</var>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the title of the current page.</doc>
-<status status="PASS" start="2025-04-12T13:07:06.010416" elapsed="0.016998"/>
+<status status="PASS" start="2025-04-12T13:29:47.498712" elapsed="0.019995"/>
 </kw>
 <kw name="Should Be Equal As Strings" owner="BuiltIn">
 <arg>${title}</arg>
 <arg>Interactive Card</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2025-04-12T13:07:06.027414" elapsed="0.001004"/>
+<status status="PASS" start="2025-04-12T13:29:47.519707" elapsed="0.001000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-04-12T13:07:06.030413" level="INFO">Interactive Card</msg>
+<msg time="2025-04-12T13:29:47.521712" level="INFO">Interactive Card</msg>
 <arg>${title}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-04-12T13:07:06.029410" elapsed="0.001003"/>
+<status status="PASS" start="2025-04-12T13:29:47.520707" elapsed="0.001005"/>
 </kw>
-<status status="PASS" start="2025-04-12T13:07:04.162196" elapsed="1.869218"/>
+<status status="PASS" start="2025-04-12T13:29:45.893384" elapsed="1.628328"/>
 </kw>
 <kw name="Validar que campos obrigatórios não permitem envio vazio" owner="interactive-card">
 <kw name="Click" owner="Browser">
-<msg time="2025-04-12T13:07:06.041414" level="INFO">Clicks the element 'id=confirm-button'.</msg>
+<msg time="2025-04-12T13:29:47.532708" level="INFO">Clicks the element 'id=confirm-button'.</msg>
 <arg>id=confirm-button</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-12T13:07:06.040416" elapsed="0.157491"/>
+<status status="PASS" start="2025-04-12T13:29:47.530709" elapsed="0.131494"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2025-04-12T13:07:06.217150" level="INFO">Waited for Element with selector xpath=//span[contains(@class, 'name-error')] at state visible</msg>
+<msg time="2025-04-12T13:29:58.097375" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2025-04-12T13:29:58.097375" level="INFO">See also file:///C:/Users/User/Desktop/ROBOT/Interactive-Card/results/playwright-log.txt for additional details.</msg>
+<msg time="2025-04-12T13:29:58.098374" level="FAIL">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('//span[contains(@class, \'name-error\')]') to be visible
+    - waiting for" http://127.0.0.1:5501/" navigation to finish...
+    - navigated to "http://127.0.0.1:5501/"
+    24 × locator resolved to hidden &lt;span class="name-error"&gt;Can't be blank&lt;/span&gt;
+</msg>
 <arg>xpath=//span[contains(@class, 'name-error')]</arg>
 <arg>visible</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2025-04-12T13:07:06.198909" elapsed="0.018241"/>
+<status status="FAIL" start="2025-04-12T13:29:47.663200" elapsed="10.449185">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('//span[contains(@class, \'name-error\')]') to be visible
+    - waiting for" http://127.0.0.1:5501/" navigation to finish...
+    - navigated to "http://127.0.0.1:5501/"
+    24 × locator resolved to hidden &lt;span class="name-error"&gt;Can't be blank&lt;/span&gt;
+</status>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2025-04-12T13:07:06.275148" level="INFO">Text: "Can't be blank"</msg>
-<msg time="2025-04-12T13:07:06.275148" level="INFO">${erro_nome} = Can't be blank</msg>
 <var>${erro_nome}</var>
 <arg>xpath=//span[contains(@class, 'name-error')]</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-12T13:07:06.218154" elapsed="0.057997"/>
+<status status="NOT RUN" start="2025-04-12T13:29:58.112385" elapsed="0.000985"/>
 </kw>
 <kw name="Should Be Equal" owner="BuiltIn">
 <arg>${erro_nome}</arg>
 <arg>Can't be blank</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2025-04-12T13:07:06.276151" elapsed="0.000000"/>
+<status status="NOT RUN" start="2025-04-12T13:29:58.113370" elapsed="0.000000"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2025-04-12T13:07:06.294149" level="INFO">Waited for Element with selector xpath=//span[contains(@class, 'month-error')] at state visible</msg>
 <arg>xpath=//span[contains(@class, 'month-error')]</arg>
 <arg>visible</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2025-04-12T13:07:06.277149" elapsed="0.018005"/>
+<status status="NOT RUN" start="2025-04-12T13:29:58.113370" elapsed="0.000999"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2025-04-12T13:07:06.339652" level="INFO">Text: "Can't be blank"</msg>
-<msg time="2025-04-12T13:07:06.339652" level="INFO">${erro_mes} = Can't be blank</msg>
 <var>${erro_mes}</var>
 <arg>xpath=//span[contains(@class, 'month-error')]</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-12T13:07:06.296151" elapsed="0.043501"/>
+<status status="NOT RUN" start="2025-04-12T13:29:58.114369" elapsed="0.000000"/>
 </kw>
 <kw name="Should Be Equal" owner="BuiltIn">
 <arg>${erro_mes}</arg>
 <arg>Can't be blank</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2025-04-12T13:07:06.339652" elapsed="0.001001"/>
+<status status="NOT RUN" start="2025-04-12T13:29:58.114369" elapsed="0.000000"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2025-04-12T13:07:06.358649" level="INFO">Waited for Element with selector xpath=//span[contains(@class, 'cvc-error')] at state visible</msg>
 <arg>xpath=//span[contains(@class, 'cvc-error')]</arg>
 <arg>visible</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2025-04-12T13:07:06.340653" elapsed="0.017996"/>
+<status status="NOT RUN" start="2025-04-12T13:29:58.115370" elapsed="0.000000"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2025-04-12T13:07:06.391651" level="INFO">Text: "Can't be blank"</msg>
-<msg time="2025-04-12T13:07:06.391651" level="INFO">${erro_cvc} = Can't be blank</msg>
 <var>${erro_cvc}</var>
 <arg>xpath=//span[contains(@class, 'cvc-error')]</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-12T13:07:06.359648" elapsed="0.032003"/>
+<status status="NOT RUN" start="2025-04-12T13:29:58.115370" elapsed="0.000000"/>
 </kw>
 <kw name="Should Be Equal" owner="BuiltIn">
 <arg>${erro_cvc}</arg>
 <arg>Can't be blank</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2025-04-12T13:07:06.392650" elapsed="0.001001"/>
+<status status="NOT RUN" start="2025-04-12T13:29:58.115370" elapsed="0.000999"/>
 </kw>
-<status status="PASS" start="2025-04-12T13:07:06.039410" elapsed="0.354241"/>
+<status status="FAIL" start="2025-04-12T13:29:47.528707" elapsed="10.587662">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('//span[contains(@class, \'name-error\')]') to be visible
+    - waiting for" http://127.0.0.1:5501/" navigation to finish...
+    - navigated to "http://127.0.0.1:5501/"
+    24 × locator resolved to hidden &lt;span class="name-error"&gt;Can't be blank&lt;/span&gt;
+</status>
 </kw>
 <kw name="Close Browser" owner="Browser" type="TEARDOWN">
-<msg time="2025-04-12T13:07:07.026344" level="INFO">Closed browser</msg>
+<msg time="2025-04-12T13:29:58.746636" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-04-12T13:07:06.394646" elapsed="0.631698"/>
+<status status="PASS" start="2025-04-12T13:29:58.116369" elapsed="0.630267"/>
 </kw>
-<status status="PASS" start="2025-04-12T13:07:04.157192" elapsed="2.870152"/>
+<status status="FAIL" start="2025-04-12T13:29:45.887383" elapsed="12.860253">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('//span[contains(@class, \'name-error\')]') to be visible
+    - waiting for" http://127.0.0.1:5501/" navigation to finish...
+    - navigated to "http://127.0.0.1:5501/"
+    24 × locator resolved to hidden &lt;span class="name-error"&gt;Can't be blank&lt;/span&gt;
+</status>
 </test>
 <test id="s1-s1-t3" name="Validar campo nome" line="19">
 <kw name="Abrir a página do formulário" owner="interactive-card" type="SETUP">
 <kw name="New Browser" owner="Browser">
-<msg time="2025-04-12T13:07:07.098273" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\User\\Desktop\\ROBOT\\Interactive-Card\\results\\browser\\traces\\temp\\bf580bcf-7193-4294-8e27-0a86d253fb3c"}</msg>
-<msg time="2025-04-12T13:07:07.662517" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\User\\Desktop\\ROBOT\\Interactive-Card\\results\\browser\\traces\\temp\\bf580bcf-7193-4294-8e27-0a86d253fb3c"}</msg>
+<msg time="2025-04-12T13:29:58.816817" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\User\\Desktop\\ROBOT\\Interactive-Card\\results\\browser\\traces\\temp\\f6aa3c93-decf-484c-b31e-8cd1b67caa84"}</msg>
+<msg time="2025-04-12T13:29:59.478785" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\User\\Desktop\\ROBOT\\Interactive-Card\\results\\browser\\traces\\temp\\f6aa3c93-decf-484c-b31e-8cd1b67caa84"}</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2025-04-12T13:07:07.096271" elapsed="0.567249"/>
+<status status="PASS" start="2025-04-12T13:29:58.814818" elapsed="0.663967"/>
 </kw>
 <kw name="New Context" owner="Browser">
-<msg time="2025-04-12T13:07:07.669514" level="INFO">{
+<msg time="2025-04-12T13:29:59.484785" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": false,
   "forcedColors": "none",
@@ -440,65 +458,65 @@
     "height": 800
   }
 }</msg>
-<msg time="2025-04-12T13:07:07.756516" level="INFO">Successfully created context. </msg>
-<msg time="2025-04-12T13:07:07.756516" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1200, 'height': 800}}</msg>
+<msg time="2025-04-12T13:29:59.560627" level="INFO">Successfully created context. </msg>
+<msg time="2025-04-12T13:29:59.560627" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1200, 'height': 800}}</msg>
 <arg>viewport={"width": ${WIDTH}, "height": ${HEIGHT}}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<status status="PASS" start="2025-04-12T13:07:07.664516" elapsed="0.092000"/>
+<status status="PASS" start="2025-04-12T13:29:59.478785" elapsed="0.081842"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2025-04-12T13:07:08.976154" level="INFO">Successfully initialized new page object and opened url: http://127.0.0.1:5501/</msg>
+<msg time="2025-04-12T13:30:00.658861" level="INFO">Successfully initialized new page object and opened url: http://127.0.0.1:5501/</msg>
 <arg>${URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2025-04-12T13:07:07.757519" elapsed="1.219634"/>
+<status status="PASS" start="2025-04-12T13:29:59.561635" elapsed="1.097226"/>
 </kw>
 <kw name="Get Title" owner="Browser">
-<msg time="2025-04-12T13:07:08.994152" level="INFO">Title: 'Interactive Card'</msg>
-<msg time="2025-04-12T13:07:08.995153" level="INFO">${title} = Interactive Card</msg>
+<msg time="2025-04-12T13:30:00.674857" level="INFO">Title: 'Interactive Card'</msg>
+<msg time="2025-04-12T13:30:00.675858" level="INFO">${title} = Interactive Card</msg>
 <var>${title}</var>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the title of the current page.</doc>
-<status status="PASS" start="2025-04-12T13:07:08.977153" elapsed="0.018000"/>
+<status status="PASS" start="2025-04-12T13:30:00.658861" elapsed="0.016997"/>
 </kw>
 <kw name="Should Be Equal As Strings" owner="BuiltIn">
 <arg>${title}</arg>
 <arg>Interactive Card</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2025-04-12T13:07:08.995153" elapsed="0.001998"/>
+<status status="PASS" start="2025-04-12T13:30:00.675858" elapsed="0.002000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-04-12T13:07:08.998158" level="INFO">Interactive Card</msg>
+<msg time="2025-04-12T13:30:00.679859" level="INFO">Interactive Card</msg>
 <arg>${title}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-04-12T13:07:08.997151" elapsed="0.001007"/>
+<status status="PASS" start="2025-04-12T13:30:00.677858" elapsed="0.002001"/>
 </kw>
-<status status="PASS" start="2025-04-12T13:07:07.094268" elapsed="1.904893"/>
+<status status="PASS" start="2025-04-12T13:29:58.813815" elapsed="1.866044"/>
 </kw>
 <kw name="Validar Campo Nome - Apenas Letras e Espaços" owner="interactive-card">
 <kw name="Name" owner="FakerLibrary">
-<msg time="2025-04-12T13:07:09.006159" level="INFO">${nome_valido} = Stacey Smith</msg>
+<msg time="2025-04-12T13:30:00.683857" level="INFO">${nome_valido} = Ryan Roberts</msg>
 <var>${nome_valido}</var>
 <doc>:example: 'John Doe'</doc>
-<status status="PASS" start="2025-04-12T13:07:09.005160" elapsed="0.001995"/>
+<status status="PASS" start="2025-04-12T13:30:00.682859" elapsed="0.000998"/>
 </kw>
 <kw name="Type Text" owner="Browser">
-<msg time="2025-04-12T13:07:09.009153" level="INFO">Types the text 'Stacey Smith' in the given field.</msg>
+<msg time="2025-04-12T13:30:00.685860" level="INFO">Types the text 'Ryan Roberts' in the given field.</msg>
 <arg>id=name</arg>
 <arg>${nome_valido}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-12T13:07:09.007155" elapsed="0.256379"/>
+<status status="PASS" start="2025-04-12T13:30:00.684856" elapsed="0.184517"/>
 </kw>
 <kw name="Get Property" owner="Browser">
-<msg time="2025-04-12T13:07:09.319533" level="INFO">Property: 'Stacey Smith'</msg>
-<msg time="2025-04-12T13:07:09.319533" level="INFO">${valor_nome} = Stacey Smith</msg>
+<msg time="2025-04-12T13:30:00.907493" level="INFO">Property: 'Ryan Roberts'</msg>
+<msg time="2025-04-12T13:30:00.907493" level="INFO">${valor_nome} = Ryan Roberts</msg>
 <var>${valor_nome}</var>
 <arg>id=name</arg>
 <arg>value</arg>
@@ -506,40 +524,40 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the ``property`` of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-12T13:07:09.264533" elapsed="0.055000"/>
+<status status="PASS" start="2025-04-12T13:30:00.870379" elapsed="0.037114"/>
 </kw>
 <kw name="Should Match Regexp" owner="BuiltIn">
 <arg>${valor_nome}</arg>
 <arg>^[A-Za-z\\s]+$</arg>
 <doc>Fails if ``string`` does not match ``pattern`` as a regular expression.</doc>
-<status status="PASS" start="2025-04-12T13:07:09.320533" elapsed="0.000995"/>
+<status status="PASS" start="2025-04-12T13:30:00.907493" elapsed="0.000998"/>
 </kw>
 <doc>Verifica se o campo de nome aceita apenas letras e espaços.</doc>
-<status status="PASS" start="2025-04-12T13:07:09.004159" elapsed="0.317369"/>
+<status status="PASS" start="2025-04-12T13:30:00.681858" elapsed="0.226633"/>
 </kw>
 <kw name="Close Browser" owner="Browser" type="TEARDOWN">
-<msg time="2025-04-12T13:07:09.940884" level="INFO">Closed browser</msg>
+<msg time="2025-04-12T13:30:01.462687" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-04-12T13:07:09.322527" elapsed="0.618357"/>
+<status status="PASS" start="2025-04-12T13:30:00.909493" elapsed="0.553194"/>
 </kw>
-<status status="PASS" start="2025-04-12T13:07:07.087737" elapsed="2.854146"/>
+<status status="PASS" start="2025-04-12T13:29:58.805814" elapsed="2.657869"/>
 </test>
 <test id="s1-s1-t4" name="Validar Campo Número do Cartão" line="22">
 <kw name="Abrir a página do formulário" owner="interactive-card" type="SETUP">
 <kw name="New Browser" owner="Browser">
-<msg time="2025-04-12T13:07:10.002883" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\User\\Desktop\\ROBOT\\Interactive-Card\\results\\browser\\traces\\temp\\661d0d45-57bb-46a6-b103-94b2eef14ff0"}</msg>
-<msg time="2025-04-12T13:07:10.483344" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\User\\Desktop\\ROBOT\\Interactive-Card\\results\\browser\\traces\\temp\\661d0d45-57bb-46a6-b103-94b2eef14ff0"}</msg>
+<msg time="2025-04-12T13:30:01.521447" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\User\\Desktop\\ROBOT\\Interactive-Card\\results\\browser\\traces\\temp\\357982e4-6bdb-4d49-9ba2-1210da59af6d"}</msg>
+<msg time="2025-04-12T13:30:02.032310" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\User\\Desktop\\ROBOT\\Interactive-Card\\results\\browser\\traces\\temp\\357982e4-6bdb-4d49-9ba2-1210da59af6d"}</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2025-04-12T13:07:10.000884" elapsed="0.482460"/>
+<status status="PASS" start="2025-04-12T13:30:01.519160" elapsed="0.514148"/>
 </kw>
 <kw name="New Context" owner="Browser">
-<msg time="2025-04-12T13:07:10.488344" level="INFO">{
+<msg time="2025-04-12T13:30:02.038310" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": false,
   "forcedColors": "none",
@@ -553,68 +571,68 @@
     "height": 800
   }
 }</msg>
-<msg time="2025-04-12T13:07:10.626743" level="INFO">Successfully created context. </msg>
-<msg time="2025-04-12T13:07:10.626743" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1200, 'height': 800}}</msg>
+<msg time="2025-04-12T13:30:02.074311" level="INFO">Successfully created context. </msg>
+<msg time="2025-04-12T13:30:02.074311" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1200, 'height': 800}}</msg>
 <arg>viewport={"width": ${WIDTH}, "height": ${HEIGHT}}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<status status="PASS" start="2025-04-12T13:07:10.484353" elapsed="0.142390"/>
+<status status="PASS" start="2025-04-12T13:30:02.033308" elapsed="0.041003"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2025-04-12T13:07:11.821676" level="INFO">Successfully initialized new page object and opened url: http://127.0.0.1:5501/</msg>
+<msg time="2025-04-12T13:30:03.075568" level="INFO">Successfully initialized new page object and opened url: http://127.0.0.1:5501/</msg>
 <arg>${URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2025-04-12T13:07:10.627750" elapsed="1.193926"/>
+<status status="PASS" start="2025-04-12T13:30:02.075312" elapsed="1.000256"/>
 </kw>
 <kw name="Get Title" owner="Browser">
-<msg time="2025-04-12T13:07:11.845669" level="INFO">Title: 'Interactive Card'</msg>
-<msg time="2025-04-12T13:07:11.845669" level="INFO">${title} = Interactive Card</msg>
+<msg time="2025-04-12T13:30:03.092568" level="INFO">Title: 'Interactive Card'</msg>
+<msg time="2025-04-12T13:30:03.092568" level="INFO">${title} = Interactive Card</msg>
 <var>${title}</var>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the title of the current page.</doc>
-<status status="PASS" start="2025-04-12T13:07:11.822672" elapsed="0.022997"/>
+<status status="PASS" start="2025-04-12T13:30:03.075568" elapsed="0.018002"/>
 </kw>
 <kw name="Should Be Equal As Strings" owner="BuiltIn">
 <arg>${title}</arg>
 <arg>Interactive Card</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2025-04-12T13:07:11.846668" elapsed="0.001004"/>
+<status status="PASS" start="2025-04-12T13:30:03.093570" elapsed="0.000997"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-04-12T13:07:11.848672" level="INFO">Interactive Card</msg>
+<msg time="2025-04-12T13:30:03.096567" level="INFO">Interactive Card</msg>
 <arg>${title}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-04-12T13:07:11.847672" elapsed="0.001000"/>
+<status status="PASS" start="2025-04-12T13:30:03.095565" elapsed="0.001002"/>
 </kw>
-<status status="PASS" start="2025-04-12T13:07:10.000884" elapsed="1.847788"/>
+<status status="PASS" start="2025-04-12T13:30:01.518207" elapsed="1.578360"/>
 </kw>
 <kw name="Validar Campo Número do Cartão - Exatamente 16 Dígitos" owner="interactive-card">
 <kw name="Type Text" owner="Browser">
-<msg time="2025-04-12T13:07:11.860669" level="INFO">Types the text 'Maria Silva' in the given field.</msg>
+<msg time="2025-04-12T13:30:03.127566" level="INFO">Types the text 'Maria Silva' in the given field.</msg>
 <arg>id=name</arg>
 <arg>Maria Silva</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-12T13:07:11.859667" elapsed="0.176221"/>
+<status status="PASS" start="2025-04-12T13:30:03.125567" elapsed="0.158542"/>
 </kw>
 <kw name="Type Text" owner="Browser">
-<msg time="2025-04-12T13:07:12.036888" level="INFO">Types the text '1234567890123456' in the given field.</msg>
+<msg time="2025-04-12T13:30:03.286110" level="INFO">Types the text '1234567890123456' in the given field.</msg>
 <arg>id=number</arg>
 <arg>1234567890123456</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-12T13:07:12.036888" elapsed="0.130539"/>
+<status status="PASS" start="2025-04-12T13:30:03.284109" elapsed="0.125190"/>
 </kw>
 <kw name="Get Property" owner="Browser">
-<msg time="2025-04-12T13:07:12.197424" level="INFO">Property: '1234567890123456'</msg>
-<msg time="2025-04-12T13:07:12.197424" level="INFO">${valor_numero} = 1234567890123456</msg>
+<msg time="2025-04-12T13:30:03.448266" level="INFO">Property: '1234567890123456'</msg>
+<msg time="2025-04-12T13:30:03.448818" level="INFO">${valor_numero} = 1234567890123456</msg>
 <var>${valor_numero}</var>
 <arg>id=number</arg>
 <arg>value</arg>
@@ -622,84 +640,84 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the ``property`` of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-12T13:07:12.167427" elapsed="0.029997"/>
+<status status="PASS" start="2025-04-12T13:30:03.409835" elapsed="0.039585"/>
 </kw>
 <kw name="Should Match Regexp" owner="BuiltIn">
 <arg>${valor_numero}</arg>
 <arg>^\\d{16}$</arg>
 <doc>Fails if ``string`` does not match ``pattern`` as a regular expression.</doc>
-<status status="PASS" start="2025-04-12T13:07:12.197424" elapsed="0.001001"/>
+<status status="PASS" start="2025-04-12T13:30:03.449964" elapsed="0.000727"/>
 </kw>
 <kw name="Type Text" owner="Browser">
-<msg time="2025-04-12T13:07:12.199424" level="INFO">Types the text '09' in the given field.</msg>
+<msg time="2025-04-12T13:30:03.452218" level="INFO">Types the text '09' in the given field.</msg>
 <arg>id=month</arg>
 <arg>09</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-12T13:07:12.198425" elapsed="0.040538"/>
+<status status="PASS" start="2025-04-12T13:30:03.450691" elapsed="0.044672"/>
 </kw>
 <kw name="Type Text" owner="Browser">
-<msg time="2025-04-12T13:07:12.241964" level="INFO">Types the text '25' in the given field.</msg>
+<msg time="2025-04-12T13:30:03.496364" level="INFO">Types the text '25' in the given field.</msg>
 <arg>id=year</arg>
 <arg>25</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-12T13:07:12.240972" elapsed="0.048115"/>
+<status status="PASS" start="2025-04-12T13:30:03.495363" elapsed="0.046243"/>
 </kw>
 <kw name="Type Text" owner="Browser">
-<msg time="2025-04-12T13:07:12.293089" level="INFO">Types the text '123' in the given field.</msg>
+<msg time="2025-04-12T13:30:03.542607" level="INFO">Types the text '123' in the given field.</msg>
 <arg>id=cvc</arg>
 <arg>123</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-12T13:07:12.291085" elapsed="0.047002"/>
+<status status="PASS" start="2025-04-12T13:30:03.541606" elapsed="0.059885"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2025-04-12T13:07:12.339089" level="INFO">Clicks the element 'id=confirm-button'.</msg>
+<msg time="2025-04-12T13:30:03.604480" level="INFO">Clicks the element 'id=confirm-button'.</msg>
 <arg>id=confirm-button</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-12T13:07:12.338087" elapsed="0.060051"/>
+<status status="PASS" start="2025-04-12T13:30:03.602509" elapsed="0.068711"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2025-04-12T13:07:12.412138" level="INFO">Waited for Element with selector xpath=//h3[contains(text(), "THANK YOU!")] at state visible</msg>
+<msg time="2025-04-12T13:30:03.686216" level="INFO">Waited for Element with selector xpath=//h3[contains(text(), "THANK YOU!")] at state visible</msg>
 <arg>xpath=//h3[contains(text(), "THANK YOU!")]</arg>
 <arg>visible</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2025-04-12T13:07:12.398138" elapsed="0.014000"/>
+<status status="PASS" start="2025-04-12T13:30:03.671220" elapsed="0.015999"/>
 </kw>
 <doc>Verifica se o campo número do cartão tem exatamente 16 dígitos.</doc>
-<status status="PASS" start="2025-04-12T13:07:11.858669" elapsed="0.553469"/>
+<status status="PASS" start="2025-04-12T13:30:03.124568" elapsed="0.562651"/>
 </kw>
 <kw name="Close Browser" owner="Browser" type="TEARDOWN">
-<msg time="2025-04-12T13:07:12.999388" level="INFO">Closed browser</msg>
+<msg time="2025-04-12T13:30:04.307062" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-04-12T13:07:12.413132" elapsed="0.587259"/>
+<status status="PASS" start="2025-04-12T13:30:03.693066" elapsed="0.613996"/>
 </kw>
-<status status="PASS" start="2025-04-12T13:07:09.996883" elapsed="3.003508"/>
+<status status="PASS" start="2025-04-12T13:30:01.512199" elapsed="2.795876"/>
 </test>
 <test id="s1-s1-t5" name="Validar Campo Data de Validade" line="25">
 <kw name="Abrir a página do formulário" owner="interactive-card" type="SETUP">
 <kw name="New Browser" owner="Browser">
-<msg time="2025-04-12T13:07:13.063970" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\User\\Desktop\\ROBOT\\Interactive-Card\\results\\browser\\traces\\temp\\32bc7b77-490f-41d1-91fe-ae698b2a54fe"}</msg>
-<msg time="2025-04-12T13:07:13.653942" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\User\\Desktop\\ROBOT\\Interactive-Card\\results\\browser\\traces\\temp\\32bc7b77-490f-41d1-91fe-ae698b2a54fe"}</msg>
+<msg time="2025-04-12T13:30:04.400290" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\User\\Desktop\\ROBOT\\Interactive-Card\\results\\browser\\traces\\temp\\d27af233-47d1-442e-aa30-5b17143348a3"}</msg>
+<msg time="2025-04-12T13:30:05.042915" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\User\\Desktop\\ROBOT\\Interactive-Card\\results\\browser\\traces\\temp\\d27af233-47d1-442e-aa30-5b17143348a3"}</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2025-04-12T13:07:13.060974" elapsed="0.592968"/>
+<status status="PASS" start="2025-04-12T13:30:04.398292" elapsed="0.644623"/>
 </kw>
 <kw name="New Context" owner="Browser">
-<msg time="2025-04-12T13:07:13.663940" level="INFO">{
+<msg time="2025-04-12T13:30:05.051916" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": false,
   "forcedColors": "none",
@@ -713,86 +731,86 @@
     "height": 800
   }
 }</msg>
-<msg time="2025-04-12T13:07:13.748884" level="INFO">Successfully created context. </msg>
-<msg time="2025-04-12T13:07:13.749887" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1200, 'height': 800}}</msg>
+<msg time="2025-04-12T13:30:05.125194" level="INFO">Successfully created context. </msg>
+<msg time="2025-04-12T13:30:05.126202" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1200, 'height': 800}}</msg>
 <arg>viewport={"width": ${WIDTH}, "height": ${HEIGHT}}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<status status="PASS" start="2025-04-12T13:07:13.656944" elapsed="0.092943"/>
+<status status="PASS" start="2025-04-12T13:30:05.044920" elapsed="0.081282"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2025-04-12T13:07:14.974731" level="INFO">Successfully initialized new page object and opened url: http://127.0.0.1:5501/</msg>
+<msg time="2025-04-12T13:30:06.157472" level="INFO">Successfully initialized new page object and opened url: http://127.0.0.1:5501/</msg>
 <arg>${URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2025-04-12T13:07:13.749887" elapsed="1.225841"/>
+<status status="PASS" start="2025-04-12T13:30:05.126627" elapsed="1.031842"/>
 </kw>
 <kw name="Get Title" owner="Browser">
-<msg time="2025-04-12T13:07:14.995723" level="INFO">Title: 'Interactive Card'</msg>
-<msg time="2025-04-12T13:07:14.995723" level="INFO">${title} = Interactive Card</msg>
+<msg time="2025-04-12T13:30:06.177473" level="INFO">Title: 'Interactive Card'</msg>
+<msg time="2025-04-12T13:30:06.177473" level="INFO">${title} = Interactive Card</msg>
 <var>${title}</var>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the title of the current page.</doc>
-<status status="PASS" start="2025-04-12T13:07:14.975728" elapsed="0.019995"/>
+<status status="PASS" start="2025-04-12T13:30:06.158469" elapsed="0.019004"/>
 </kw>
 <kw name="Should Be Equal As Strings" owner="BuiltIn">
 <arg>${title}</arg>
 <arg>Interactive Card</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2025-04-12T13:07:14.996728" elapsed="0.000000"/>
+<status status="PASS" start="2025-04-12T13:30:06.178473" elapsed="0.001003"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-04-12T13:07:14.998726" level="INFO">Interactive Card</msg>
+<msg time="2025-04-12T13:30:06.181475" level="INFO">Interactive Card</msg>
 <arg>${title}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-04-12T13:07:14.997727" elapsed="0.000999"/>
+<status status="PASS" start="2025-04-12T13:30:06.180475" elapsed="0.001000"/>
 </kw>
-<status status="PASS" start="2025-04-12T13:07:13.059966" elapsed="1.938760"/>
+<status status="PASS" start="2025-04-12T13:30:04.397292" elapsed="1.784183"/>
 </kw>
 <kw name="Validar Campo Data de Validade - Mês e Ano Válidos" owner="interactive-card">
 <kw name="Type Text" owner="Browser">
-<msg time="2025-04-12T13:07:15.015730" level="INFO">Types the text 'Maria Silva' in the given field.</msg>
+<msg time="2025-04-12T13:30:06.186471" level="INFO">Types the text 'Maria Silva' in the given field.</msg>
 <arg>id=name</arg>
 <arg>Maria Silva</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-12T13:07:15.013726" elapsed="0.206192"/>
+<status status="PASS" start="2025-04-12T13:30:06.184472" elapsed="0.203417"/>
 </kw>
 <kw name="Type Text" owner="Browser">
-<msg time="2025-04-12T13:07:15.222920" level="INFO">Types the text '1234567890123456' in the given field.</msg>
+<msg time="2025-04-12T13:30:06.389421" level="INFO">Types the text '1234567890123456' in the given field.</msg>
 <arg>id=number</arg>
 <arg>1234567890123456</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-12T13:07:15.220920" elapsed="0.148435"/>
+<status status="PASS" start="2025-04-12T13:30:06.388441" elapsed="0.153826"/>
 </kw>
 <kw name="Type Text" owner="Browser">
-<msg time="2025-04-12T13:07:15.372355" level="INFO">Types the text '09' in the given field.</msg>
+<msg time="2025-04-12T13:30:06.543268" level="INFO">Types the text '09' in the given field.</msg>
 <arg>id=month</arg>
 <arg>09</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-12T13:07:15.370353" elapsed="0.047937"/>
+<status status="PASS" start="2025-04-12T13:30:06.542267" elapsed="0.053996"/>
 </kw>
 <kw name="Type Text" owner="Browser">
-<msg time="2025-04-12T13:07:15.420285" level="INFO">Types the text '25' in the given field.</msg>
+<msg time="2025-04-12T13:30:06.598589" level="INFO">Types the text '25' in the given field.</msg>
 <arg>id=year</arg>
 <arg>25</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-12T13:07:15.418290" elapsed="0.048998"/>
+<status status="PASS" start="2025-04-12T13:30:06.597264" elapsed="0.044843"/>
 </kw>
 <kw name="Get Property" owner="Browser">
-<msg time="2025-04-12T13:07:15.508140" level="INFO">Property: '09'</msg>
-<msg time="2025-04-12T13:07:15.508140" level="INFO">${valor_mes} = 09</msg>
+<msg time="2025-04-12T13:30:06.684138" level="INFO">Property: '09'</msg>
+<msg time="2025-04-12T13:30:06.685137" level="INFO">${valor_mes} = 09</msg>
 <var>${valor_mes}</var>
 <arg>id=month</arg>
 <arg>value</arg>
@@ -800,11 +818,11 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the ``property`` of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-12T13:07:15.467288" elapsed="0.040852"/>
+<status status="PASS" start="2025-04-12T13:30:06.643108" elapsed="0.042029"/>
 </kw>
 <kw name="Get Property" owner="Browser">
-<msg time="2025-04-12T13:07:15.529135" level="INFO">Property: '25'</msg>
-<msg time="2025-04-12T13:07:15.530142" level="INFO">${valor_ano} = 25</msg>
+<msg time="2025-04-12T13:30:06.708133" level="INFO">Property: '25'</msg>
+<msg time="2025-04-12T13:30:06.708133" level="INFO">${valor_ano} = 25</msg>
 <var>${valor_ano}</var>
 <arg>id=year</arg>
 <arg>value</arg>
@@ -812,46 +830,46 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the ``property`` of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-12T13:07:15.509140" elapsed="0.021002"/>
+<status status="PASS" start="2025-04-12T13:30:06.685137" elapsed="0.022996"/>
 </kw>
 <kw name="Should Match Regexp" owner="BuiltIn">
 <arg>${valor_mes}</arg>
 <arg>^(0[1-9]|1[0-2])$</arg>
 <doc>Fails if ``string`` does not match ``pattern`` as a regular expression.</doc>
-<status status="PASS" start="2025-04-12T13:07:15.530142" elapsed="0.000997"/>
+<status status="PASS" start="2025-04-12T13:30:06.708133" elapsed="0.000999"/>
 </kw>
 <kw name="Should Match Regexp" owner="BuiltIn">
 <arg>${valor_ano}</arg>
 <arg>^\\d{2}$</arg>
 <doc>Fails if ``string`` does not match ``pattern`` as a regular expression.</doc>
-<status status="PASS" start="2025-04-12T13:07:15.531139" elapsed="0.001001"/>
+<status status="PASS" start="2025-04-12T13:30:06.709132" elapsed="0.001003"/>
 </kw>
 <doc>Verifica se o mês de validade está entre 01 e 12 e se o ano é válido (futuro).</doc>
-<status status="PASS" start="2025-04-12T13:07:15.012728" elapsed="0.519412"/>
+<status status="PASS" start="2025-04-12T13:30:06.183474" elapsed="0.526661"/>
 </kw>
 <kw name="Close Browser" owner="Browser" type="TEARDOWN">
-<msg time="2025-04-12T13:07:16.061535" level="INFO">Closed browser</msg>
+<msg time="2025-04-12T13:30:07.379877" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-04-12T13:07:15.533135" elapsed="0.528400"/>
+<status status="PASS" start="2025-04-12T13:30:06.711136" elapsed="0.669739"/>
 </kw>
-<status status="PASS" start="2025-04-12T13:07:13.052967" elapsed="3.009573"/>
+<status status="PASS" start="2025-04-12T13:30:04.390267" elapsed="2.990608"/>
 </test>
 <test id="s1-s1-t6" name="Validar Campo CVC" line="28">
 <kw name="Abrir a página do formulário" owner="interactive-card" type="SETUP">
 <kw name="New Browser" owner="Browser">
-<msg time="2025-04-12T13:07:16.129964" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\User\\Desktop\\ROBOT\\Interactive-Card\\results\\browser\\traces\\temp\\b968810a-e7ed-4114-94fd-fa25574026af"}</msg>
-<msg time="2025-04-12T13:07:16.695321" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\User\\Desktop\\ROBOT\\Interactive-Card\\results\\browser\\traces\\temp\\b968810a-e7ed-4114-94fd-fa25574026af"}</msg>
+<msg time="2025-04-12T13:30:07.447690" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\User\\Desktop\\ROBOT\\Interactive-Card\\results\\browser\\traces\\temp\\ebe533c8-1ecb-46cb-bd80-550b9b551abd"}</msg>
+<msg time="2025-04-12T13:30:08.018018" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\User\\Desktop\\ROBOT\\Interactive-Card\\results\\browser\\traces\\temp\\ebe533c8-1ecb-46cb-bd80-550b9b551abd"}</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2025-04-12T13:07:16.128966" elapsed="0.567361"/>
+<status status="PASS" start="2025-04-12T13:30:07.445427" elapsed="0.572591"/>
 </kw>
 <kw name="New Context" owner="Browser">
-<msg time="2025-04-12T13:07:16.701321" level="INFO">{
+<msg time="2025-04-12T13:30:08.023013" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": false,
   "forcedColors": "none",
@@ -865,95 +883,95 @@
     "height": 800
   }
 }</msg>
-<msg time="2025-04-12T13:07:16.772321" level="INFO">Successfully created context. </msg>
-<msg time="2025-04-12T13:07:16.773321" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1200, 'height': 800}}</msg>
+<msg time="2025-04-12T13:30:08.085598" level="INFO">Successfully created context. </msg>
+<msg time="2025-04-12T13:30:08.086601" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1200, 'height': 800}}</msg>
 <arg>viewport={"width": ${WIDTH}, "height": ${HEIGHT}}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<status status="PASS" start="2025-04-12T13:07:16.696327" elapsed="0.076994"/>
+<status status="PASS" start="2025-04-12T13:30:08.019020" elapsed="0.067581"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2025-04-12T13:07:17.983577" level="INFO">Successfully initialized new page object and opened url: http://127.0.0.1:5501/</msg>
+<msg time="2025-04-12T13:30:09.159003" level="INFO">Successfully initialized new page object and opened url: http://127.0.0.1:5501/</msg>
 <arg>${URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2025-04-12T13:07:16.773321" elapsed="1.210256"/>
+<status status="PASS" start="2025-04-12T13:30:08.086601" elapsed="1.073402"/>
 </kw>
 <kw name="Get Title" owner="Browser">
-<msg time="2025-04-12T13:07:17.999579" level="INFO">Title: 'Interactive Card'</msg>
-<msg time="2025-04-12T13:07:18.000581" level="INFO">${title} = Interactive Card</msg>
+<msg time="2025-04-12T13:30:09.178997" level="INFO">Title: 'Interactive Card'</msg>
+<msg time="2025-04-12T13:30:09.178997" level="INFO">${title} = Interactive Card</msg>
 <var>${title}</var>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the title of the current page.</doc>
-<status status="PASS" start="2025-04-12T13:07:17.984578" elapsed="0.016003"/>
+<status status="PASS" start="2025-04-12T13:30:09.160003" elapsed="0.018994"/>
 </kw>
 <kw name="Should Be Equal As Strings" owner="BuiltIn">
 <arg>${title}</arg>
 <arg>Interactive Card</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2025-04-12T13:07:18.001579" elapsed="0.001004"/>
+<status status="PASS" start="2025-04-12T13:30:09.178997" elapsed="0.002007"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-04-12T13:07:18.003579" level="INFO">Interactive Card</msg>
+<msg time="2025-04-12T13:30:09.182001" level="INFO">Interactive Card</msg>
 <arg>${title}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-04-12T13:07:18.002583" elapsed="0.000996"/>
+<status status="PASS" start="2025-04-12T13:30:09.181004" elapsed="0.000997"/>
 </kw>
-<status status="PASS" start="2025-04-12T13:07:16.127964" elapsed="1.875615"/>
+<status status="PASS" start="2025-04-12T13:30:07.444880" elapsed="1.738125"/>
 </kw>
 <kw name="Validar Campo CVC - Exatamente 3 Dígitos" owner="interactive-card">
 <kw name="Type Text" owner="Browser">
-<msg time="2025-04-12T13:07:18.017580" level="INFO">Types the text 'Maria Silva' in the given field.</msg>
+<msg time="2025-04-12T13:30:09.188750" level="INFO">Types the text 'Maria Silva' in the given field.</msg>
 <arg>id=name</arg>
 <arg>Maria Silva</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-12T13:07:18.015578" elapsed="0.178883"/>
+<status status="PASS" start="2025-04-12T13:30:09.187750" elapsed="0.164439"/>
 </kw>
 <kw name="Type Text" owner="Browser">
-<msg time="2025-04-12T13:07:18.195460" level="INFO">Types the text '1234567890123456' in the given field.</msg>
+<msg time="2025-04-12T13:30:09.354187" level="INFO">Types the text '1234567890123456' in the given field.</msg>
 <arg>id=number</arg>
 <arg>1234567890123456</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-12T13:07:18.194461" elapsed="0.131564"/>
+<status status="PASS" start="2025-04-12T13:30:09.353186" elapsed="0.127645"/>
 </kw>
 <kw name="Type Text" owner="Browser">
-<msg time="2025-04-12T13:07:18.327024" level="INFO">Types the text '09' in the given field.</msg>
+<msg time="2025-04-12T13:30:09.481837" level="INFO">Types the text '09' in the given field.</msg>
 <arg>id=month</arg>
 <arg>09</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-12T13:07:18.326025" elapsed="0.038794"/>
+<status status="PASS" start="2025-04-12T13:30:09.480831" elapsed="0.041971"/>
 </kw>
 <kw name="Type Text" owner="Browser">
-<msg time="2025-04-12T13:07:18.365824" level="INFO">Types the text '25' in the given field.</msg>
+<msg time="2025-04-12T13:30:09.525097" level="INFO">Types the text '25' in the given field.</msg>
 <arg>id=year</arg>
 <arg>25</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-12T13:07:18.365824" elapsed="0.041999"/>
+<status status="PASS" start="2025-04-12T13:30:09.523356" elapsed="0.046673"/>
 </kw>
 <kw name="Type Text" owner="Browser">
-<msg time="2025-04-12T13:07:18.410825" level="INFO">Types the text '123' in the given field.</msg>
+<msg time="2025-04-12T13:30:09.572529" level="INFO">Types the text '123' in the given field.</msg>
 <arg>id=cvc</arg>
 <arg>123</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-12T13:07:18.408824" elapsed="0.056285"/>
+<status status="PASS" start="2025-04-12T13:30:09.571032" elapsed="0.052030"/>
 </kw>
 <kw name="Get Property" owner="Browser">
-<msg time="2025-04-12T13:07:18.500107" level="INFO">Property: '123'</msg>
-<msg time="2025-04-12T13:07:18.501108" level="INFO">${valor_cvc} = 123</msg>
+<msg time="2025-04-12T13:30:09.672940" level="INFO">Property: '123'</msg>
+<msg time="2025-04-12T13:30:09.673943" level="INFO">${valor_cvc} = 123</msg>
 <var>${valor_cvc}</var>
 <arg>id=cvc</arg>
 <arg>value</arg>
@@ -961,39 +979,39 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the ``property`` of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-12T13:07:18.465109" elapsed="0.035999"/>
+<status status="PASS" start="2025-04-12T13:30:09.623062" elapsed="0.050881"/>
 </kw>
 <kw name="Should Match Regexp" owner="BuiltIn">
 <arg>${valor_cvc}</arg>
 <arg>^\\d{3}$</arg>
 <doc>Fails if ``string`` does not match ``pattern`` as a regular expression.</doc>
-<status status="PASS" start="2025-04-12T13:07:18.501108" elapsed="0.001001"/>
+<status status="PASS" start="2025-04-12T13:30:09.673943" elapsed="0.000995"/>
 </kw>
 <doc>Verifica se o campo CVC aceita exatamente 3 dígitos numéricos.</doc>
-<status status="PASS" start="2025-04-12T13:07:18.014581" elapsed="0.488526"/>
+<status status="PASS" start="2025-04-12T13:30:09.186747" elapsed="0.489200"/>
 </kw>
 <kw name="Close Browser" owner="Browser" type="TEARDOWN">
-<msg time="2025-04-12T13:07:19.038525" level="INFO">Closed browser</msg>
+<msg time="2025-04-12T13:30:10.270882" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-04-12T13:07:18.503107" elapsed="0.535418"/>
+<status status="PASS" start="2025-04-12T13:30:09.676949" elapsed="0.594155"/>
 </kw>
-<status status="PASS" start="2025-04-12T13:07:16.124962" elapsed="2.913563"/>
+<status status="PASS" start="2025-04-12T13:30:07.438747" elapsed="2.832870"/>
 </test>
-<status status="PASS" start="2025-04-12T13:06:55.647438" elapsed="23.440079"/>
+<status status="FAIL" start="2025-04-12T13:29:39.459240" elapsed="30.871226"/>
 </suite>
-<status status="PASS" start="2025-04-12T13:06:55.607421" elapsed="23.530079"/>
+<status status="FAIL" start="2025-04-12T13:29:39.418224" elapsed="30.969234"/>
 </suite>
 <statistics>
 <total>
-<stat pass="6" fail="0" skip="0">All Tests</stat>
+<stat pass="5" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Tests" id="s1" pass="6" fail="0" skip="0">Tests</stat>
-<stat name="Interactive-Card" id="s1-s1" pass="6" fail="0" skip="0">Tests.Interactive-Card</stat>
+<stat name="Tests" id="s1" pass="5" fail="1" skip="0">Tests</stat>
+<stat name="Interactive-Card" id="s1-s1" pass="5" fail="1" skip="0">Tests.Interactive-Card</stat>
 </suite>
 </statistics>
 <errors>
