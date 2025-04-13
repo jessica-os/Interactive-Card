@@ -1,43 +1,96 @@
-# Interactive-Card
-Este desafio foi retirado do site Frontend Mentor.<br>  [Clique aqui](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw) para conferir o desafio.
+# 💳 Interactive Card Form
 
-## Do que se trata esse desafio?
-Trata-se de um formulário,com preenchimento de forma dinâmica no cartão de crédito.
-O usuário ao preencher os campos do formulário, pode conferir os dados sendo inseridos dinamicamente no cartão ao lado.
+[![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Robot Framework](https://img.shields.io/badge/Robot_Framework-automated_tests-brightgreen?logo=robotframework&logoColor=white&style=flat-square)](https://robotframework.org/)
+[![CI](https://github.com/jessica-os/Interactive-Card/actions/workflows/github-actions-demo.yml/badge.svg)](https://github.com/jessica-os/Interactive-Card/actions)
 
-## Quais validações devem ser feitas?
+> Este desafio foi proposto pela [Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw).  
+> Confira a proposta original clicando [aqui](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw).
 
-Em cada campo do input existem validações,como:
-- Não é permitido enviar campos em branco.
-- Número mínimo e número máximo de caracteres.
-- Campo que só aceita numeros.
-- Campo que valida os meses do ano, sendo obrigatório preencher de 01 à 12.
+---
 
-## Habilidades desenvolvidas:
-- Uso de tags semânticas para construção do formulário.
-- Uso de flexbox para ajustes dos elementos na tela.
-- Uso e manipulação dos elementos no JavaScript através do DOM.
-- Uso de funções, eventos e condicionais para o dinamismo na tela.
-- Uso de regex/máscara.
-- Uso de mediaqueries para responsividade.
+## 📝 Sobre o Projeto
 
-## Linguagens Utilizadas:
-- HTML <img align="center" alt="HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+Trata-se de um formulário com preenchimento dinâmico de dados em um cartão de crédito fictício.  
+À medida que o usuário insere os dados nos campos do formulário, eles são exibidos visualmente no cartão ao lado, em tempo real.
 
-- CSS  <img align="center" alt="CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+---
 
-- Javascript  <img align="center" alt="JS" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-          
+## ✅ Validações do Formulário
 
-## Veja como ficou:
+O formulário aplica validações importantes para garantir o preenchimento correto:
 
-### Desktop:
-<img src="./src/imagens-readme/Interactive-card-desktop.gif" alt="video desktop">
+- ❌ Não permite envio de **campos em branco**
+- 🔢 Validação de **número mínimo/máximo de caracteres**
+- 🧮 Campos que aceitam **somente números**
+- 📅 Validação de **mês entre 01 e 12**
 
-### Tablet:
-<img src="./src/imagens-readme/Interactive-card-tablet.gif" alt="video tablet">
- 
-### Mobile:
- <img src="./src/imagens-readme/Interactive-card-mobile.gif" alt="video mobile">
+---
 
-Para ver o projeto pronto, [clique aqui!](https://jessica-os.github.io/Interactive-Card/)
+## 🧠 Habilidades Desenvolvidas
+
+- Uso de **tags semânticas** para estruturação do HTML
+- Aplicação de **Flexbox** para responsividade
+- Manipulação do DOM com **JavaScript**
+- Implementação de **validações com Regex**
+- Responsividade com **Media Queries**
+- Boas práticas com código limpo e modular
+
+---
+
+## 💻 Tecnologias Utilizadas
+
+<div style="display: flex; gap: 10px;">
+  <img alt="HTML5" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+  <img alt="CSS3" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+  <img alt="JavaScript" height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+</div>
+
+---
+
+## 🤖 Testes Automatizados com Robot Framework
+
+Este projeto conta com uma suíte de **testes automatizados end-to-end** utilizando o [Robot Framework](https://robotframework.org/), com a biblioteca [Browser](https://robotframework-browser.org/) (baseada em Playwright) e a `FakerLibrary` para geração de dados dinâmicos.
+
+### 🔍 O que está sendo testado?
+
+- ✅ Envio com dados válidos
+- ❌ Envio com campos em branco
+- ✍️ Validação do campo Nome (apenas letras e espaços)
+- 💳 Validação do Número do Cartão (exatamente 16 dígitos)
+- 📅 Validação da Data (mês entre 01-12 e ano futuro)
+- 🔒 Validação do CVC (3 dígitos numéricos)
+
+### 🚀 Como rodar os testes localmente?
+
+```bash
+# Instale as dependências
+pip install robotframework robotframework-browser FakerLibrary
+rfbrowser init
+
+# Suba o servidor local
+npx http-server ./ -p 5501
+
+# Execute os testes
+robot -d results tests
+```
+📸 Veja como ficou!<br>
+---
+💻 Desktop<br>
+<img src="./src/imagens-readme/Interactive-card-desktop.gif" alt="Vídeo versão desktop">
+---
+📱 Tablet<br>
+<img src="./src/imagens-readme/Interactive-card-tablet.gif" alt="Vídeo versão tablet">
+---
+📲 Mobile<br>
+<img src="./src/imagens-readme/Interactive-card-mobile.gif" alt="Vídeo versão mobile">
+---
+
+🔗 Acesse o projeto<br>
+👉 [Clique aqui para visualizar o projeto ao vivo!](https://jessica-os.github.io/Interactive-Card/)
+
+
+
+
