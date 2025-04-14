@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.12.2 on win32)" generated="2025-04-14T09:47:23.450807" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\User\Desktop\ROBOT\Interactive-Card\tests">
+<suite id="s1-s1" name="Interactive-Card" source="C:\Users\User\Desktop\ROBOT\Interactive-Card\tests\interactive-card.robot">
+<test id="s1-s1-t1" name="Validar envio do formulário com dados válidos" line="8">
+<kw name="Abrir a página do formulário" owner="interactive-card" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-04-14T09:47:25.381284" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\User\\Desktop\\ROBOT\\Interactive-Card\\browser\\traces\\temp\\0503ebfa-84f4-4cc0-abc1-2c08de393485"}</msg>
+<msg time="2025-04-14T09:47:25.589610" level="INFO">Starting Browser process C:\Python312\Lib\site-packages\Browser\wrapper\index.js using port 62414</msg>
+<msg time="2025-04-14T09:47:25.589610" level="INFO">Node startup parameters: ['node', 'C:\\Python312\\Lib\\site-packages\\Browser\\wrapper\\index.js', '62414']</msg>
+<msg time="2025-04-14T09:47:31.815383" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\User\\Desktop\\ROBOT\\Interactive-Card\\browser\\traces\\temp\\0503ebfa-84f4-4cc0-abc1-2c08de393485"}</msg>
+<arg>browser=${BROWSER}</arg>
+<arg>headless=${HEADLESS}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-04-14T09:47:25.376249" elapsed="6.440132"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2025-04-14T09:47:31.822380" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 800,
+    "width": 1200
+  }
+}</msg>
+<msg time="2025-04-14T09:47:31.916722" level="INFO">Successfully created context. </msg>
+<msg time="2025-04-14T09:47:31.917724" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 800, 'width': 1200}}</msg>
+<arg>viewport={"width": ${WIDTH}, "height": ${HEIGHT}}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2025-04-14T09:47:31.817380" elapsed="0.100344"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-04-14T09:47:36.096014" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg time="2025-04-14T09:47:36.096014" level="INFO">See also file:///C:/Users/User/Desktop/ROBOT/Interactive-Card/playwright-log.txt for additional details.</msg>
+<msg time="2025-04-14T09:47:36.161067" level="FAIL">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5501/
+Call log:
+  - navigating to "http://127.0.0.1:5501/", waiting until "load"
+</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="FAIL" start="2025-04-14T09:47:31.917724" elapsed="5.683841">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5501/
+Call log:
+  - navigating to "http://127.0.0.1:5501/", waiting until "load"
+</status>
+</kw>
+<kw name="Get Title" owner="Browser">
+<var>${title}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="NOT RUN" start="2025-04-14T09:47:37.601565" elapsed="0.000999"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${title}</arg>
+<arg>Interactive Card</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="NOT RUN" start="2025-04-14T09:47:37.603572" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>${title}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-04-14T09:47:37.603572" elapsed="0.001008"/>
+</kw>
+<status status="FAIL" start="2025-04-14T09:47:25.374226" elapsed="12.230354">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5501/
+Call log:
+  - navigating to "http://127.0.0.1:5501/", waiting until "load"
+</status>
+</kw>
+<kw name="Close Browser" owner="Browser" type="TEARDOWN">
+<msg time="2025-04-14T09:47:38.107682" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-04-14T09:47:37.604580" elapsed="0.504106"/>
+</kw>
+<tag>happy-path</tag>
+<tag>positivo</tag>
+<status status="FAIL" start="2025-04-14T09:47:25.372182" elapsed="12.736504">Setup failed:
+Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5501/
+Call log:
+  - navigating to "http://127.0.0.1:5501/", waiting until "load"
+</status>
+</test>
+<test id="s1-s1-t2" name="Validar o não envio do formulário com campos em branco" line="15">
+<kw name="Abrir a página do formulário" owner="interactive-card" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-04-14T09:47:38.204415" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\User\\Desktop\\ROBOT\\Interactive-Card\\browser\\traces\\temp\\2de89688-5178-45e1-ba00-abca0ed158bb"}</msg>
+<msg time="2025-04-14T09:47:38.767729" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\User\\Desktop\\ROBOT\\Interactive-Card\\browser\\traces\\temp\\2de89688-5178-45e1-ba00-abca0ed158bb"}</msg>
+<arg>browser=${BROWSER}</arg>
+<arg>headless=${HEADLESS}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-04-14T09:47:38.203414" elapsed="0.565328"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2025-04-14T09:47:38.773733" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 800,
+    "width": 1200
+  }
+}</msg>
+<msg time="2025-04-14T09:47:38.857138" level="INFO">Successfully created context. </msg>
+<msg time="2025-04-14T09:47:38.857138" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 800, 'width': 1200}}</msg>
+<arg>viewport={"width": ${WIDTH}, "height": ${HEIGHT}}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2025-04-14T09:47:38.768742" elapsed="0.088396"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-04-14T09:47:42.134084" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg time="2025-04-14T09:47:42.134084" level="INFO">See also file:///C:/Users/User/Desktop/ROBOT/Interactive-Card/playwright-log.txt for additional details.</msg>
+<msg time="2025-04-14T09:47:42.134084" level="FAIL">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5501/
+Call log:
+  - navigating to "http://127.0.0.1:5501/", waiting until "load"
+</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="FAIL" start="2025-04-14T09:47:38.858144" elapsed="3.285940">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5501/
+Call log:
+  - navigating to "http://127.0.0.1:5501/", waiting until "load"
+</status>
+</kw>
+<kw name="Get Title" owner="Browser">
+<var>${title}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="NOT RUN" start="2025-04-14T09:47:42.144084" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${title}</arg>
+<arg>Interactive Card</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="NOT RUN" start="2025-04-14T09:47:42.145093" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>${title}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-04-14T09:47:42.145636" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-04-14T09:47:38.202417" elapsed="3.943219">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5501/
+Call log:
+  - navigating to "http://127.0.0.1:5501/", waiting until "load"
+</status>
+</kw>
+<kw name="Close Browser" owner="Browser" type="TEARDOWN">
+<msg time="2025-04-14T09:47:42.601509" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-04-14T09:47:42.146629" elapsed="0.454880"/>
+</kw>
+<tag>negativo</tag>
+<tag>obrigatoriedade</tag>
+<status status="FAIL" start="2025-04-14T09:47:38.196416" elapsed="4.406093">Setup failed:
+Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5501/
+Call log:
+  - navigating to "http://127.0.0.1:5501/", waiting until "load"
+</status>
+</test>
+<test id="s1-s1-t3" name="Validar campo nome" line="18">
+<kw name="Abrir a página do formulário" owner="interactive-card" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-04-14T09:47:42.699512" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\User\\Desktop\\ROBOT\\Interactive-Card\\browser\\traces\\temp\\11447911-2f84-495b-a19c-60c8b436976a"}</msg>
+<msg time="2025-04-14T09:47:43.211231" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\User\\Desktop\\ROBOT\\Interactive-Card\\browser\\traces\\temp\\11447911-2f84-495b-a19c-60c8b436976a"}</msg>
+<arg>browser=${BROWSER}</arg>
+<arg>headless=${HEADLESS}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-04-14T09:47:42.695509" elapsed="0.515722"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2025-04-14T09:47:43.217230" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 800,
+    "width": 1200
+  }
+}</msg>
+<msg time="2025-04-14T09:47:43.287009" level="INFO">Successfully created context. </msg>
+<msg time="2025-04-14T09:47:43.287009" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 800, 'width': 1200}}</msg>
+<arg>viewport={"width": ${WIDTH}, "height": ${HEIGHT}}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2025-04-14T09:47:43.212228" elapsed="0.074781"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-04-14T09:47:47.087366" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg time="2025-04-14T09:47:47.088311" level="INFO">See also file:///C:/Users/User/Desktop/ROBOT/Interactive-Card/playwright-log.txt for additional details.</msg>
+<msg time="2025-04-14T09:47:47.088311" level="FAIL">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5501/
+Call log:
+  - navigating to "http://127.0.0.1:5501/", waiting until "load"
+</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="FAIL" start="2025-04-14T09:47:43.287009" elapsed="3.803304">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5501/
+Call log:
+  - navigating to "http://127.0.0.1:5501/", waiting until "load"
+</status>
+</kw>
+<kw name="Get Title" owner="Browser">
+<var>${title}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="NOT RUN" start="2025-04-14T09:47:47.091312" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${title}</arg>
+<arg>Interactive Card</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="NOT RUN" start="2025-04-14T09:47:47.093319" elapsed="0.000993"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>${title}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-04-14T09:47:47.094312" elapsed="0.001000"/>
+</kw>
+<status status="FAIL" start="2025-04-14T09:47:42.694509" elapsed="4.400803">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5501/
+Call log:
+  - navigating to "http://127.0.0.1:5501/", waiting until "load"
+</status>
+</kw>
+<kw name="Close Browser" owner="Browser" type="TEARDOWN">
+<msg time="2025-04-14T09:47:47.807358" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-04-14T09:47:47.096310" elapsed="0.711930"/>
+</kw>
+<tag>nome</tag>
+<tag>validacao</tag>
+<status status="FAIL" start="2025-04-14T09:47:42.690505" elapsed="5.118268">Setup failed:
+Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5501/
+Call log:
+  - navigating to "http://127.0.0.1:5501/", waiting until "load"
+</status>
+</test>
+<test id="s1-s1-t4" name="Validar Campo Número do Cartão" line="21">
+<kw name="Abrir a página do formulário" owner="interactive-card" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-04-14T09:47:47.862769" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\User\\Desktop\\ROBOT\\Interactive-Card\\browser\\traces\\temp\\6fa6a661-92a8-4f54-8b37-1b83ca65c8c1"}</msg>
+<msg time="2025-04-14T09:47:48.249230" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\User\\Desktop\\ROBOT\\Interactive-Card\\browser\\traces\\temp\\6fa6a661-92a8-4f54-8b37-1b83ca65c8c1"}</msg>
+<arg>browser=${BROWSER}</arg>
+<arg>headless=${HEADLESS}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-04-14T09:47:47.861774" elapsed="0.387456"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2025-04-14T09:47:48.255228" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 800,
+    "width": 1200
+  }
+}</msg>
+<msg time="2025-04-14T09:47:48.372228" level="INFO">Successfully created context. </msg>
+<msg time="2025-04-14T09:47:48.372228" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 800, 'width': 1200}}</msg>
+<arg>viewport={"width": ${WIDTH}, "height": ${HEIGHT}}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2025-04-14T09:47:48.250226" elapsed="0.123006"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-04-14T09:47:51.742910" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg time="2025-04-14T09:47:51.742910" level="INFO">See also file:///C:/Users/User/Desktop/ROBOT/Interactive-Card/playwright-log.txt for additional details.</msg>
+<msg time="2025-04-14T09:47:51.742910" level="FAIL">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5501/
+Call log:
+  - navigating to "http://127.0.0.1:5501/", waiting until "load"
+</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="FAIL" start="2025-04-14T09:47:48.373232" elapsed="3.372675">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5501/
+Call log:
+  - navigating to "http://127.0.0.1:5501/", waiting until "load"
+</status>
+</kw>
+<kw name="Get Title" owner="Browser">
+<var>${title}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="NOT RUN" start="2025-04-14T09:47:51.745907" elapsed="0.001005"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${title}</arg>
+<arg>Interactive Card</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="NOT RUN" start="2025-04-14T09:47:51.746912" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>${title}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-04-14T09:47:51.747907" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-04-14T09:47:47.860776" elapsed="3.887131">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5501/
+Call log:
+  - navigating to "http://127.0.0.1:5501/", waiting until "load"
+</status>
+</kw>
+<kw name="Close Browser" owner="Browser" type="TEARDOWN">
+<msg time="2025-04-14T09:47:52.245988" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-04-14T09:47:51.748912" elapsed="0.498074"/>
+</kw>
+<tag>numero-cartao</tag>
+<tag>validacao</tag>
+<status status="FAIL" start="2025-04-14T09:47:47.854774" elapsed="4.392212">Setup failed:
+Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5501/
+Call log:
+  - navigating to "http://127.0.0.1:5501/", waiting until "load"
+</status>
+</test>
+<test id="s1-s1-t5" name="Validar Campo Data de Validade" line="24">
+<kw name="Abrir a página do formulário" owner="interactive-card" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-04-14T09:47:52.324980" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\User\\Desktop\\ROBOT\\Interactive-Card\\browser\\traces\\temp\\4eec4aca-d6e6-4d13-ad23-6b5ebcec754b"}</msg>
+<msg time="2025-04-14T09:47:52.715709" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\User\\Desktop\\ROBOT\\Interactive-Card\\browser\\traces\\temp\\4eec4aca-d6e6-4d13-ad23-6b5ebcec754b"}</msg>
+<arg>browser=${BROWSER}</arg>
+<arg>headless=${HEADLESS}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-04-14T09:47:52.321982" elapsed="0.393727"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2025-04-14T09:47:52.720709" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 800,
+    "width": 1200
+  }
+}</msg>
+<msg time="2025-04-14T09:47:52.856707" level="INFO">Successfully created context. </msg>
+<msg time="2025-04-14T09:47:52.857703" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 800, 'width': 1200}}</msg>
+<arg>viewport={"width": ${WIDTH}, "height": ${HEIGHT}}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2025-04-14T09:47:52.715709" elapsed="0.141994"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-04-14T09:47:56.207323" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg time="2025-04-14T09:47:56.208325" level="INFO">See also file:///C:/Users/User/Desktop/ROBOT/Interactive-Card/playwright-log.txt for additional details.</msg>
+<msg time="2025-04-14T09:47:56.208325" level="FAIL">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5501/
+Call log:
+  - navigating to "http://127.0.0.1:5501/", waiting until "load"
+</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="FAIL" start="2025-04-14T09:47:52.858720" elapsed="3.352601">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5501/
+Call log:
+  - navigating to "http://127.0.0.1:5501/", waiting until "load"
+</status>
+</kw>
+<kw name="Get Title" owner="Browser">
+<var>${title}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="NOT RUN" start="2025-04-14T09:47:56.212339" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${title}</arg>
+<arg>Interactive Card</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="NOT RUN" start="2025-04-14T09:47:56.212339" elapsed="0.001001"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>${title}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-04-14T09:47:56.213340" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-04-14T09:47:52.318985" elapsed="3.894355">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5501/
+Call log:
+  - navigating to "http://127.0.0.1:5501/", waiting until "load"
+</status>
+</kw>
+<kw name="Close Browser" owner="Browser" type="TEARDOWN">
+<msg time="2025-04-14T09:47:56.721152" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-04-14T09:47:56.214342" elapsed="0.506810"/>
+</kw>
+<tag>data-validade</tag>
+<tag>validacao</tag>
+<status status="FAIL" start="2025-04-14T09:47:52.314982" elapsed="4.408171">Setup failed:
+Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5501/
+Call log:
+  - navigating to "http://127.0.0.1:5501/", waiting until "load"
+</status>
+</test>
+<test id="s1-s1-t6" name="Validar Campo CVC" line="27">
+<kw name="Abrir a página do formulário" owner="interactive-card" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-04-14T09:47:56.830138" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\User\\Desktop\\ROBOT\\Interactive-Card\\browser\\traces\\temp\\0167ade1-926b-437c-bcc1-e0e6d97e314c"}</msg>
+<msg time="2025-04-14T09:47:57.414267" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\User\\Desktop\\ROBOT\\Interactive-Card\\browser\\traces\\temp\\0167ade1-926b-437c-bcc1-e0e6d97e314c"}</msg>
+<arg>browser=${BROWSER}</arg>
+<arg>headless=${HEADLESS}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-04-14T09:47:56.829142" elapsed="0.585125"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2025-04-14T09:47:57.420266" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 800,
+    "width": 1200
+  }
+}</msg>
+<msg time="2025-04-14T09:47:57.468267" level="INFO">Successfully created context. </msg>
+<msg time="2025-04-14T09:47:57.469268" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 800, 'width': 1200}}</msg>
+<arg>viewport={"width": ${WIDTH}, "height": ${HEIGHT}}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2025-04-14T09:47:57.415265" elapsed="0.054003"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-04-14T09:48:00.848461" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg time="2025-04-14T09:48:00.849458" level="INFO">See also file:///C:/Users/User/Desktop/ROBOT/Interactive-Card/playwright-log.txt for additional details.</msg>
+<msg time="2025-04-14T09:48:00.849458" level="FAIL">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5501/
+Call log:
+  - navigating to "http://127.0.0.1:5501/", waiting until "load"
+</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="FAIL" start="2025-04-14T09:47:57.469268" elapsed="3.383188">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5501/
+Call log:
+  - navigating to "http://127.0.0.1:5501/", waiting until "load"
+</status>
+</kw>
+<kw name="Get Title" owner="Browser">
+<var>${title}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="NOT RUN" start="2025-04-14T09:48:00.852456" elapsed="0.001000"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${title}</arg>
+<arg>Interactive Card</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="NOT RUN" start="2025-04-14T09:48:00.853456" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>${title}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-04-14T09:48:00.854455" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-04-14T09:47:56.829142" elapsed="4.025313">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5501/
+Call log:
+  - navigating to "http://127.0.0.1:5501/", waiting until "load"
+</status>
+</kw>
+<kw name="Close Browser" owner="Browser" type="TEARDOWN">
+<msg time="2025-04-14T09:48:01.284405" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-04-14T09:48:00.856454" elapsed="0.428973"/>
+</kw>
+<tag>cvc</tag>
+<tag>validacao</tag>
+<status status="FAIL" start="2025-04-14T09:47:56.820143" elapsed="4.465284">Setup failed:
+Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5501/
+Call log:
+  - navigating to "http://127.0.0.1:5501/", waiting until "load"
+</status>
+</test>
+<status status="FAIL" start="2025-04-14T09:47:23.504551" elapsed="37.835320"/>
+</suite>
+<status status="FAIL" start="2025-04-14T09:47:23.454800" elapsed="37.942527"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="6" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">cvc</stat>
+<stat pass="0" fail="1" skip="0">data-validade</stat>
+<stat pass="0" fail="1" skip="0">happy-path</stat>
+<stat pass="0" fail="1" skip="0">negativo</stat>
+<stat pass="0" fail="1" skip="0">nome</stat>
+<stat pass="0" fail="1" skip="0">numero-cartao</stat>
+<stat pass="0" fail="1" skip="0">obrigatoriedade</stat>
+<stat pass="0" fail="1" skip="0">positivo</stat>
+<stat pass="0" fail="4" skip="0">validacao</stat>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="0" fail="6" skip="0">Tests</stat>
+<stat name="Interactive-Card" id="s1-s1" pass="0" fail="6" skip="0">Tests.Interactive-Card</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

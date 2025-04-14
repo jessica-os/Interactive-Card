@@ -1,0 +1,372 @@
+{"level":30,"time":"2025-04-14T12:47:29.167Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Listening on 62414"}
+(node:12012) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-04-14T12:47:29.514Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-04-14T12:47:31.809Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Adding browser to stack: chromium, version: 134.0.6998.35"}
+{"level":30,"time":"2025-04-14T12:47:31.811Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-04-14T12:47:31.827Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Start of node method newContext"}
+{"level":30,"time":"2025-04-14T12:47:31.811Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-04-14T12:47:31.827Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"height\":800,\"width\":1200}}"}
+{"level":30,"time":"2025-04-14T12:47:31.828Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-04-14T12:47:31.828Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Trace file: "}
+{"level":30,"time":"2025-04-14T12:47:31.910Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Changed active context"}
+{"level":30,"time":"2025-04-14T12:47:31.910Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"End of node method newContext"}
+{"level":30,"time":"2025-04-14T12:47:31.924Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-04-14T12:47:31.925Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-04-14T12:47:32.722Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Video path: undefined"}
+{"level":30,"time":"2025-04-14T12:47:32.722Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Changed active page"}
+{"level":30,"time":"2025-04-14T12:47:35.124Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Error of node method  newPage"}
+================= Original suppressed error =================
+page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5501/
+Call log:
+[2m  - navigating to "http://127.0.0.1:5501/", waiting until "load"[22m
+
+    at newPage (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:12567:18)
+    at async PlaywrightServer.newPage (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:13132:28) {
+  name: 'Error'
+}
+=============================================================
+{"level":30,"time":"2025-04-14T12:47:36.027Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Start of node method takeScreenshot"}
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10725:11)
+    at takeScreenshot (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10769:3)
+    at PlaywrightServer.takeScreenshot (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:13132:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2025-04-14T12:47:36.028Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Error of node method  takeScreenshot"}
+{"level":30,"time":"2025-04-14T12:47:37.608Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2025-04-14T12:47:38.105Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:12223:15)
+    at PlaywrightServer.getActiveBrowser (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:13119:59)
+    at PlaywrightServer.setTimeout (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:13367:57)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2025-04-14T12:47:38.188Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-14T12:47:38.189Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-14T12:47:38.199Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-14T12:47:38.200Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-14T12:47:38.209Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-04-14T12:47:38.765Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Adding browser to stack: chromium, version: 134.0.6998.35"}
+{"level":30,"time":"2025-04-14T12:47:38.765Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-04-14T12:47:38.765Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-04-14T12:47:38.777Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Start of node method newContext"}
+{"level":30,"time":"2025-04-14T12:47:38.778Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"height\":800,\"width\":1200}}"}
+{"level":30,"time":"2025-04-14T12:47:38.778Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-04-14T12:47:38.778Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Trace file: "}
+{"level":30,"time":"2025-04-14T12:47:38.853Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Changed active context"}
+{"level":30,"time":"2025-04-14T12:47:38.854Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"End of node method newContext"}
+{"level":30,"time":"2025-04-14T12:47:38.862Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-04-14T12:47:38.863Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-04-14T12:47:39.741Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Video path: undefined"}
+{"level":30,"time":"2025-04-14T12:47:39.741Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Changed active page"}
+================= Original suppressed error =================
+{"level":30,"time":"2025-04-14T12:47:41.794Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Error of node method  newPage"}
+page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5501/
+Call log:
+[2m  - navigating to "http://127.0.0.1:5501/", waiting until "load"[22m
+
+    at newPage (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:12567:18)
+    at async PlaywrightServer.newPage (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:13132:28) {
+  name: 'Error'
+}
+=============================================================
+{"level":30,"time":"2025-04-14T12:47:42.064Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Start of node method takeScreenshot"}
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10725:11)
+    at takeScreenshot (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10769:3)
+    at PlaywrightServer.takeScreenshot (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:13132:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2025-04-14T12:47:42.065Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Error of node method  takeScreenshot"}
+{"level":30,"time":"2025-04-14T12:47:42.150Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2025-04-14T12:47:42.596Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:12223:15)
+    at PlaywrightServer.getActiveBrowser (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:13119:59)
+    at PlaywrightServer.setTimeout (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:13367:57)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2025-04-14T12:47:42.687Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-14T12:47:42.687Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-14T12:47:42.692Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-14T12:47:42.692Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-14T12:47:42.702Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-04-14T12:47:43.208Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Adding browser to stack: chromium, version: 134.0.6998.35"}
+{"level":30,"time":"2025-04-14T12:47:43.208Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-04-14T12:47:43.208Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-04-14T12:47:43.220Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Start of node method newContext"}
+{"level":30,"time":"2025-04-14T12:47:43.220Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"height\":800,\"width\":1200}}"}
+{"level":30,"time":"2025-04-14T12:47:43.220Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-04-14T12:47:43.220Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Trace file: "}
+{"level":30,"time":"2025-04-14T12:47:43.282Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Changed active context"}
+{"level":30,"time":"2025-04-14T12:47:43.283Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"End of node method newContext"}
+{"level":30,"time":"2025-04-14T12:47:43.292Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-04-14T12:47:43.292Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-04-14T12:47:44.354Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Video path: undefined"}
+{"level":30,"time":"2025-04-14T12:47:44.355Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Changed active page"}
+{"level":30,"time":"2025-04-14T12:47:46.667Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Error of node method  newPage"}
+================= Original suppressed error =================
+page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5501/
+Call log:
+[2m  - navigating to "http://127.0.0.1:5501/", waiting until "load"[22m
+
+    at newPage (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:12567:18)
+    at async PlaywrightServer.newPage (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:13132:28) {
+  name: 'Error'
+}
+=============================================================
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10725:11)
+    at takeScreenshot (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10769:3)
+    at PlaywrightServer.takeScreenshot (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:13132:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2025-04-14T12:47:46.990Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-04-14T12:47:46.991Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Error of node method  takeScreenshot"}
+{"level":30,"time":"2025-04-14T12:47:47.100Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2025-04-14T12:47:47.805Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:12223:15)
+    at PlaywrightServer.getActiveBrowser (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:13119:59)
+    at PlaywrightServer.setTimeout (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:13367:57)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2025-04-14T12:47:47.852Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-14T12:47:47.852Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-14T12:47:47.857Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-14T12:47:47.857Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-14T12:47:47.864Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-04-14T12:47:48.246Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Adding browser to stack: chromium, version: 134.0.6998.35"}
+{"level":30,"time":"2025-04-14T12:47:48.246Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-04-14T12:47:48.246Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-04-14T12:47:48.259Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Start of node method newContext"}
+{"level":30,"time":"2025-04-14T12:47:48.259Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"height\":800,\"width\":1200}}"}
+{"level":30,"time":"2025-04-14T12:47:48.259Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-04-14T12:47:48.259Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Trace file: "}
+{"level":30,"time":"2025-04-14T12:47:48.369Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Changed active context"}
+{"level":30,"time":"2025-04-14T12:47:48.369Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"End of node method newContext"}
+{"level":30,"time":"2025-04-14T12:47:48.378Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-04-14T12:47:48.378Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-04-14T12:47:49.074Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Video path: undefined"}
+{"level":30,"time":"2025-04-14T12:47:49.074Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Changed active page"}
+================= Original suppressed error =================
+page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5501/
+Call log:
+[2m  - navigating to "http://127.0.0.1:5501/", waiting until "load"[22m
+
+    at newPage (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:12567:18)
+    at async PlaywrightServer.newPage (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:13132:28) {
+  name: 'Error'
+}
+=============================================================
+{"level":30,"time":"2025-04-14T12:47:51.458Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Error of node method  newPage"}
+{"level":30,"time":"2025-04-14T12:47:51.568Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Start of node method takeScreenshot"}
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10725:11)
+    at takeScreenshot (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10769:3)
+    at PlaywrightServer.takeScreenshot (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:13132:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2025-04-14T12:47:51.569Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Error of node method  takeScreenshot"}
+{"level":30,"time":"2025-04-14T12:47:51.753Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2025-04-14T12:47:52.244Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:12223:15)
+    at PlaywrightServer.getActiveBrowser (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:13119:59)
+    at PlaywrightServer.setTimeout (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:13367:57)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2025-04-14T12:47:52.312Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-14T12:47:52.312Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-14T12:47:52.317Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-14T12:47:52.317Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-14T12:47:52.326Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-04-14T12:47:52.712Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Adding browser to stack: chromium, version: 134.0.6998.35"}
+{"level":30,"time":"2025-04-14T12:47:52.713Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-04-14T12:47:52.712Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-04-14T12:47:52.724Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Start of node method newContext"}
+{"level":30,"time":"2025-04-14T12:47:52.724Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"height\":800,\"width\":1200}}"}
+{"level":30,"time":"2025-04-14T12:47:52.724Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-04-14T12:47:52.724Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Trace file: "}
+{"level":30,"time":"2025-04-14T12:47:52.854Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Changed active context"}
+{"level":30,"time":"2025-04-14T12:47:52.854Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"End of node method newContext"}
+{"level":30,"time":"2025-04-14T12:47:52.864Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-04-14T12:47:52.864Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-04-14T12:47:53.514Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Video path: undefined"}
+{"level":30,"time":"2025-04-14T12:47:53.514Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Changed active page"}
+================= Original suppressed error =================
+{"level":30,"time":"2025-04-14T12:47:55.907Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Error of node method  newPage"}
+page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5501/
+Call log:
+[2m  - navigating to "http://127.0.0.1:5501/", waiting until "load"[22m
+
+    at newPage (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:12567:18)
+    at async PlaywrightServer.newPage (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:13132:28) {
+  name: 'Error'
+}
+=============================================================
+{"level":30,"time":"2025-04-14T12:47:56.064Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Start of node method takeScreenshot"}
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10725:11)
+    at takeScreenshot (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10769:3)
+    at PlaywrightServer.takeScreenshot (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:13132:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2025-04-14T12:47:56.065Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Error of node method  takeScreenshot"}
+{"level":30,"time":"2025-04-14T12:47:56.217Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2025-04-14T12:47:56.716Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:12223:15)
+    at PlaywrightServer.getActiveBrowser (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:13119:59)
+    at PlaywrightServer.setTimeout (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:13367:57)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2025-04-14T12:47:56.815Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-14T12:47:56.815Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-14T12:47:56.825Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-14T12:47:56.826Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-14T12:47:56.832Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-04-14T12:47:57.412Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Adding browser to stack: chromium, version: 134.0.6998.35"}
+{"level":30,"time":"2025-04-14T12:47:57.412Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-04-14T12:47:57.412Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-04-14T12:47:57.423Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Start of node method newContext"}
+{"level":30,"time":"2025-04-14T12:47:57.423Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"height\":800,\"width\":1200}}"}
+{"level":30,"time":"2025-04-14T12:47:57.423Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-04-14T12:47:57.423Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Trace file: "}
+{"level":30,"time":"2025-04-14T12:47:57.466Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Changed active context"}
+{"level":30,"time":"2025-04-14T12:47:57.466Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"End of node method newContext"}
+{"level":30,"time":"2025-04-14T12:47:57.474Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-04-14T12:47:57.474Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-04-14T12:47:58.250Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Video path: undefined"}
+{"level":30,"time":"2025-04-14T12:47:58.250Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Changed active page"}
+================= Original suppressed error =================
+page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5501/
+Call log:
+[2m  - navigating to "http://127.0.0.1:5501/", waiting until "load"[22m
+
+    at newPage (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:12567:18)
+    at async PlaywrightServer.newPage (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:13132:28) {
+  name: 'Error'
+}
+=============================================================
+{"level":30,"time":"2025-04-14T12:48:00.562Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Error of node method  newPage"}
+{"level":30,"time":"2025-04-14T12:48:00.693Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Start of node method takeScreenshot"}
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at exists (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10725:11)
+    at takeScreenshot (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:10769:3)
+    at PlaywrightServer.takeScreenshot (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:13132:34)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2025-04-14T12:48:00.693Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Error of node method  takeScreenshot"}
+{"level":30,"time":"2025-04-14T12:48:00.863Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2025-04-14T12:48:01.282Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:12223:15)
+    at PlaywrightServer.getActiveBrowser (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:13119:59)
+    at PlaywrightServer.setTimeout (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:13367:57)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2025-04-14T12:48:01.336Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-14T12:48:01.336Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:12223:15)
+    at PlaywrightServer.getActiveBrowser (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:13119:59)
+    at PlaywrightServer.setTimeout (C:\Python312\Lib\site-packages\Browser\wrapper\index.js:13367:57)
+    at Object.onReceiveHalfClose (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2025-04-14T12:48:01.392Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-14T12:48:01.393Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-14T12:48:02.670Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-04-14T12:48:02.670Z","pid":12012,"hostname":"DESKTOP-1C9T17I","msg":"End of node method closeAllBrowsers"}
