@@ -1,157 +1,129 @@
-const cardName = document.querySelector(".card-name");
-const inputName = document.querySelector("#name");
-const nameError = document.querySelector(".name-error");
-
-const cardNumber = document.querySelector(".card-number");
-const inputNumber = document.querySelector("#number");
-const numberError = document.querySelector(".number-error");
-
-const cardCvc = document.querySelector(".card-cvc");
-const inputCvc = document.querySelector("#cvc");
-const cvcError = document.querySelector(".cvc-error");
-
-const cardMonth = document.querySelector(".card-month");
-const inputMonth = document.querySelector("#month");
-const monthError = document.querySelector(".month-error");
-
-const cardYear = document.querySelector(".card-year");
-const inputYear = document.querySelector("#year");
-
-const inputs = document.querySelectorAll("input");
-
 const form = document.querySelector("#form");
 const thank = document.querySelector(".thank");
 
-const confirmButton = document.querySelector("#confirm-button ");
+const cardElements = {
+  name: document.querySelector(".card-name"),
+  number: document.querySelector(".card-number"),
+  month: document.querySelector(".card-month"),
+  year: document.querySelector(".card-year"),
+  cvc: document.querySelector(".card-cvc")
+};
+
+const inputFields = {
+  name: document.querySelector("#name"),
+  number: document.querySelector("#number"),
+  month: document.querySelector("#month"),
+  year: document.querySelector("#year"),
+  cvc: document.querySelector("#cvc")
+};
+
+const errorMessages = {
+  name: document.querySelector(".name-error"),
+  number: document.querySelector(".number-error"),
+  month: document.querySelector(".month-error"),
+  cvc: document.querySelector(".cvc-error")
+};
+
+const confirmButton = document.querySelector("#confirm-button");
 const continueButton = document.querySelector(".continue-button");
 
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
-});
+const defaultCardValues = {
+  name: "JANE APPLESEED",
+  number: "0000 0000 0000 0000",
+  month: "00",
+  year: "00",
+  cvc: "000"
+};
 
-inputName.addEventListener("input", () => {
-  cardName.innerHTML = inputName.value;
-});
+// Atualiza conteúdo do card ao digitar
+inputFields.name.addEventListener("input", () => updateCard("name", inputFields.name.value));
+inputFields.number.addEventListener("input", () =>
+  updateCard("number", formatCardNumber(inputFields.number.value))
+);
+inputFields.month.addEventListener("input", () => updateCard("month", inputFields.month.value));
+inputFields.year.addEventListener("input", () => updateCard("year", inputFields.year.value));
+inputFields.cvc.addEventListener("input", () => updateCard("cvc", inputFields.cvc.value));
 
-inputNumber.addEventListener("input", () => {
-  cardNumber.innerHTML = inputNumber.value.match(/.{1,4}/g).join(" ");
-});
+// Impede reload
+form.addEventListener("submit", (e) => e.preventDefault());
 
-inputCvc.addEventListener("input", () => {
-  cardCvc.innerHTML = inputCvc.value;
-});
-inputMonth.addEventListener("input", () => {
-  cardMonth.innerHTML = inputMonth.value;
-});
-inputYear.addEventListener("input", () => {
-  cardYear.innerHTML = inputYear.value;
-});
-
+// Clique em Confirmar
 confirmButton.addEventListener("click", () => {
-  if (
-    nameValidate() === true &&
-    numberValidate() === true &&
-    monthValidate() === true &&
-    yearValidate() === true &&
-    cvcValidate() === true
-  ) {
-    nameValidate();
-    numberValidate();
-    monthValidate();
-    yearValidate();
-    cvcValidate();
+  const validations = [
+    validateName(),
+    validateNumber(),
+    validateMonth(),
+    validateYear(),
+    validateCvc()
+  ];
+
+  if (validations.every(Boolean)) {
     form.style.display = "none";
     thank.style.display = "block";
-  } else {
-    nameValidate();
-    numberValidate();
-    monthValidate();
-    yearValidate();
-    cvcValidate();
   }
 });
 
+// Clique em Continue
 continueButton.addEventListener("click", () => {
   form.style.display = "block";
   thank.style.display = "none";
-  inputName.value = "";
-  inputNumber.value = "";
-  inputMonth.value = "";
-  inputYear.value = "";
-  inputCvc.value = "";
-  cardName.innerHTML = "JANE APPLESEED";
-  cardNumber.innerHTML = "0000 0000 0000 0000";
-  cardCvc.innerHTML = "000";
-  cardMonth.innerHTML = "00";
-  cardYear.innerHTML = "00";
+  resetForm();
 });
 
-function nameValidate() {
-  if (inputName.value.match(/^[a-z A-Z ]+$/)) {
-    inputName.style.borderColor = "hsl(270, 3%, 87%)";
-    nameError.style.visibility = "hidden";
-    return true;
-  } else {
-    cardName.innerHTML;
-    inputName.style.borderColor = "red";
-    nameError.style.visibility = "visible";
-    return false;
-  }
-}
-function numberValidate() {
-  if (inputNumber.value.match(/^\d+/) && inputNumber.value.length === 16) {
-    cardNumber.innerHTML = inputNumber.value.match(/.{1,4}/g).join(" ");
-    inputNumber.style.borderColor = "hsl(270, 3%, 87%)";
-    numberError.style.visibility = "hidden";
-    return true;
-  } else {
-    cardNumber.innerHTML;
-    inputNumber.style.borderColor = "red";
-    numberError.style.visibility = "visible";
-    return false;
-  }
+// ========= Funções Utilitárias ========= //
+
+function updateCard(field, value) {
+  cardElements[field].textContent = value || defaultCardValues[field];
 }
 
-function monthValidate() {
-  if (
-    inputMonth.value.match(/^\d+/) &&
-    inputMonth.value.length === 2 &&
-    inputMonth.value <= 12
-  ) {
-    cardMonth.innerHTML = inputMonth.value;
-    inputMonth.style.borderColor = "hsl(270, 3%, 87%)";
-    monthError.style.visibility = "hidden";
-    return true;
-  } else {
-    cardMonth.innerHTML;
-    inputMonth.style.borderColor = "red";
-    monthError.style.visibility = "visible";
-    return false;
-  }
+function formatCardNumber(number) {
+  return number.replace(/\D/g, "").match(/.{1,4}/g)?.join(" ") || "";
 }
-function yearValidate() {
-  if (inputYear.value.match(/^\d+/) && inputYear.value.length === 2) {
-    cardYear.innerHTML = inputYear.value;
-    inputYear.style.borderColor = "hsl(270, 3%, 87%)";
-    monthError.style.visibility = "hidden";
-    return true;
-  } else {
-    cardYear.innerHTML;
-    inputYear.style.borderColor = "red";
-    monthError.style.visibility = "visible";
-    return false;
-  }
+
+function showError(input, errorElement, show = true) {
+  input.classList.toggle("error", show);
+  errorElement.style.visibility = show ? "visible" : "hidden";
 }
-function cvcValidate() {
-  if (inputCvc.value.match(/^\d+/) && inputCvc.value.length === 3) {
-    cardCvc.innerHTML = inputCvc.value;
-    inputCvc.style.borderColor = "hsl(270, 3%, 87%)";
-    cvcError.style.visibility = "hidden";
-    return true;
-  } else {
-    cardCvc.innerHTML;
-    inputCvc.style.borderColor = "red";
-    cvcError.style.visibility = "visible";
-    return false;
-  }
+
+function resetForm() {
+  Object.keys(inputFields).forEach((field) => {
+    inputFields[field].value = "";
+    updateCard(field, "");
+    showError(inputFields[field], errorMessages[field] || {}, false);
+  });
+}
+
+// ========= Validações ========= //
+
+function validateName() {
+  const isValid = /^[a-zA-Z\s]+$/.test(inputFields.name.value.trim());
+  showError(inputFields.name, errorMessages.name, !isValid);
+  return isValid;
+}
+
+function validateNumber() {
+  const value = inputFields.number.value.replace(/\s/g, "");
+  const isValid = /^\d{16}$/.test(value);
+  showError(inputFields.number, errorMessages.number, !isValid);
+  return isValid;
+}
+
+function validateMonth() {
+  const value = parseInt(inputFields.month.value, 10);
+  const isValid = /^\d{2}$/.test(inputFields.month.value) && value >= 1 && value <= 12;
+  showError(inputFields.month, errorMessages.month, !isValid);
+  return isValid;
+}
+
+function validateYear() {
+  const isValid = /^\d{2}$/.test(inputFields.year.value);
+  // Usamos o erro de mês por simplicidade visual, ou pode criar um erro específico
+  showError(inputFields.year, errorMessages.month, !isValid);
+  return isValid;
+}
+
+function validateCvc() {
+  const isValid = /^\d{3}$/.test(inputFields.cvc.value);
+  showError(inputFields.cvc, errorMessages.cvc, !isValid);
+  return isValid;
 }
